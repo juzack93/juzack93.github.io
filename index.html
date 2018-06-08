@@ -1,0 +1,1734 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Modell Performing Arts Center at The Lyric</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+    
+    
+    <style>
+        header {
+            position: fixed;
+            top: 0; 
+            right: 50;
+            left: 50;
+            background-color: white;
+            width: 100%;
+            height: 100px;
+            color: #414141;
+        }
+        
+        
+       
+        
+        ul {
+            text-align: right;
+            list-style-type: none;
+            margin: -55px 50px 0 0px;
+            
+        }
+
+        ul li {
+            display: inline;
+            padding: 10px;
+        }
+
+        ul li a {
+            color: #414141;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: .8em;
+            font-family: "opensans", sans-serif;
+            font-weight: 600;
+            transition: 0.1s;
+            letter-spacing: .5px;
+            
+            
+        }
+
+        ul li a:hover {
+            color: #B60A16;
+        }
+        
+      
+        
+        #container {
+            margin-top: 10px;
+            margin-left: 40px;
+            
+            
+            
+        }
+        
+        p {
+            display: relative;
+            position: absolute;
+            width: 300px;
+           color: #414141;
+            text-align: left;
+            font-size: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .address {
+            
+            margin-top: 30px;
+            font-size: 12px;
+            margin-left: 30px;
+            width: 400px;
+            margin-bottom: 0px;
+            display: inline;
+        }
+        
+        hr {
+            margin-top: 20px;
+            display: block;
+            position: relative; 
+            width: 98%;
+            border:1;
+        }
+
+       
+
+/* slider */        
+        
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+    color: #414141;
+     
+    
+    
+}
+        
+
+      
+
+
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 70px auto 0 auto;
+  border-radius: 4px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+    
+    
+}
+
+#slider ul {
+    
+  position: relative;
+    margin:0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+    
+}
+
+#slider ul li {
+    
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 1150px;
+  height: 470px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+    
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+        
+        
+        
+        
+        
+        
+        
+        
+ 
+
+/* Lets Pop up */
+
+.letspop:hover{
+  cursor: pointer;
+}
+.letspop1:hover{
+  cursor: pointer;
+}
+.letspop2:hover{
+  cursor: pointer;
+}
+.letspop3:hover{
+  cursor: pointer;
+}
+.letspop4:hover{
+  cursor: pointer;
+}
+        
+.letspop5:hover{
+  cursor: pointer;
+}
+.letspop6:hover{
+  cursor: pointer;
+}
+.letspop7:hover{
+  cursor: pointer;
+}
+        
+    
+.popup{
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 50%; 
+  top: 5%;
+  z-index: 2;
+    
+  
+    background: linear-gradient(90deg, #f2f2f2 39.3%, rgba(0, 0, 0, 0) 39.3%), linear-gradient(90deg, #d3d3d3 39.4%, white 39.5%);
+
+  height: 360px;
+  width: 800px;
+  overflow: hidden;
+  padding: 40px;
+  transform: translate(-50%, 0);
+  margin-top: 90px;
+    border-radius:3px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    
+}        
+.overlay{
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+} 
+.popup1 {
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 50%; 
+  top: 5%;
+  z-index: 2;
+  background: linear-gradient(90deg, #f2f2f2 39.3%, rgba(0, 0, 0, 0) 39.3%), linear-gradient(90deg, #d3d3d3 39.4%, white 39.5%);
+  height: 360px;
+  width: 800px;
+  overflow: hidden;
+  padding: 40px;
+  transform: translate(-50%, 0);
+  margin-top: 90px;
+    border-radius:3px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.overlay1 {
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+} 
+        
+.popup2 {
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 50%; 
+  top: 5%;
+  z-index: 2;
+  background: linear-gradient(90deg, #f2f2f2 39.3%, rgba(0, 0, 0, 0) 39.3%), linear-gradient(90deg, #d3d3d3 39.4%, white 39.5%);
+  height: 360px;
+  width: 800px;
+  overflow: hidden;
+  padding: 40px;
+  transform: translate(-50%, 0);
+  margin-top: 90px;
+    border-radius:3px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}        
+.overlay2 {
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+} 
+.popup3 {
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 50%; 
+  top: 5%;
+  z-index: 2;
+  background: linear-gradient(90deg, #f2f2f2 39.3%, rgba(0, 0, 0, 0) 39.3%), linear-gradient(90deg, #d3d3d3 39.4%, white 39.5%);
+  height:360px;
+  width: 800px;
+  overflow: hidden;
+  padding: 40px;
+  transform: translate(-50%, 0);
+  margin-top: 90px;
+    border-radius:3px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.overlay3 {
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+}         
+
+.popup4 {
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 50%; 
+  top: 5%;
+  z-index: 2;
+  background: linear-gradient(90deg, #f2f2f2 39.3%, rgba(0, 0, 0, 0) 39.3%), linear-gradient(90deg, #d3d3d3 39.4%, white 39.5%);
+  height: 360px;
+  width: 800px;
+  overflow: hidden;
+  padding: 40px;
+  transform: translate(-50%, 0);
+  margin-top: 90px;
+    border-radius:3px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}        
+.overlay4 {
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+} 
+.popup5 {
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 50%; 
+  top: 5%;
+  z-index: 2;
+  background: linear-gradient(90deg, #f2f2f2 39.3%, rgba(0, 0, 0, 0) 39.3%), linear-gradient(90deg, #d3d3d3 39.4%, white 39.5%);
+  height: 360px;
+  width: 800px;
+  overflow: hidden;
+  padding: 40px;
+  transform: translate(-50%, 0);
+  margin-top: 90px;
+    border-radius:3px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.overlay5 {
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+} 
+        
+.popup6 {
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 50%; 
+  top: 5%;
+  z-index: 2;
+  background: linear-gradient(90deg, #f2f2f2 39.3%, rgba(0, 0, 0, 0) 39.3%), linear-gradient(90deg, #d3d3d3 39.4%, white 39.5%);
+  height: 360px;
+  width: 800px;
+  overflow: hidden;
+  padding: 40px;
+  transform: translate(-50%, 0);
+  margin-top: 90px;
+    border-radius:3px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}        
+.overlay6 {
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+} 
+.popup7 {
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 50%; 
+  top: 5%;
+  z-index: 2;
+  background: linear-gradient(90deg, #f2f2f2 39.3%, rgba(0, 0, 0, 0) 39.3%), linear-gradient(90deg, #d3d3d3 39.4%, white 39.5%);
+  height: 360px;
+  width: 800px;
+  overflow: hidden;
+  padding: 40px;
+  transform: translate(-50%, 0);
+  margin-top: 90px;
+    border-radius:3px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.overlay7 {
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+} 
+        
+
+/* Bored stuff & extras*/
+
+h1{
+  color: #414141;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 16px;
+display: inline-block;
+letter-spacing: 1px;  
+text-shadow: .8px .8px .8px #c1c1c1;
+  
+}                
+        
+h2{
+  color: #414141;
+display: inline-block;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 30px;
+    letter-spacing: 1px;
+  text-transform: uppercase;
+    font-style: bold;
+}
+        
+        
+h3{
+  color: #414141;
+display: inline-block;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 30px;  
+    font-weight: bold;
+    letter-spacing: 1px;
+      text-transform: uppercase;
+}
+        
+
+h4{
+  color: #414141;
+display: inline-block;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 30px;  
+    font-weight: bold;
+    letter-spacing: 1px;
+      text-transform: uppercase;
+}        
+
+h5{
+  color: #414141;
+display: inline-block;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 30px;
+    padding-top:25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+      text-transform: uppercase;
+} 
+
+h6{
+  color: #414141;
+display: inline-block;
+  text-align: left;
+  font-size: 14px;
+  margin-left: 30px; 
+    font-weight: bold;
+    letter-spacing: 1px;
+}              
+        
+.close{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: block;
+  color: #bababa;
+  font-family: sans-serif;
+  margin-right:5px;
+  font-size: 20px;
+    font-weight: lighter;
+
+}
+        
+.close:hover{
+  cursor: pointer;
+  color: #B60A16;
+    
+}       
+        
+.vl {
+    margin-top:50px;
+    margin-left: 132px;
+    border-left: 1px solid #414141;
+    margin-bottom: 50px;
+    height: 300px;
+    top:0;  
+    bottom:50;
+    display: inline;
+}  
+        
+.vl2 {
+    margin-left: 45px;
+    border-left: 1px solid #414141;
+    margin-bottom: 50px;
+    height: 300px;
+    top:0;
+    bottom:50;
+    display: inline;
+}  
+        
+.vl3 {
+    margin-left: 152px;
+    border-left: 1px solid #414141;
+    margin-bottom: 50px;
+    height: 300px;
+    top:0;
+    bottom:50;
+display: inline;
+}        
+   
+.vl4 {
+    margin-left: 89px;
+    border-left: 1px solid #414141;
+    margin-bottom: 50px;
+    height: 300px;
+    top:0;
+    bottom:50;
+display: inline;
+}
+        
+        
+.vl5 {
+    margin-left: 329px;
+    margin-top: 100px;
+    border-left: 1px solid #414141;
+    margin-bottom: 50px;
+    height: 300px;
+    top:0;
+display: inline;
+}  
+        
+.vl6 {
+    margin-left:41px;
+    margin-top: 0px;
+    border-left: 1px solid #414141;
+    margin-bottom: 50px;
+    height: 300px;
+    top:0;
+display: inline;
+}         
+      
+.address2 {
+            font-size: 12px;
+            margin-top: 70px;
+            margin-left: -42px;
+            width: 100px;
+            margin-bottom: 0px;
+            display: inline-block;
+    font-family: "Pt-serif";
+    
+        }
+
+.address3 {
+            font-size: 12px;
+            margin-top: 156px;
+            margin-left: -105px;
+            width: 100px;
+            margin-bottom: 0px;
+    display: inline-block;
+    font-family: "Pt-serif";    
+        }
+        
+.address4 {
+            font-size: 12px;
+            margin-left: 583px;
+            width: 400px;
+            margin-bottom: 0px;
+    display: inline-block;
+    
+        }        
+        
+.address5 {
+            font-size: 12px;
+            margin-left: -63px;
+            width: 100px;
+            margin-bottom: 0px;
+            margin-top: 70px;
+    display: inline-block;
+    color:#B60A16;
+    font-family: "Pt-serif";
+        } 
+        
+.address6 {
+            font-size: 12px;
+            margin-left: -155px;
+            width: 100px;
+            margin-bottom: 0px;
+            margin-top: 105px;
+    display: inline-block;
+    font-family: "Pt-serif";
+        }     
+        
+.address7 {
+            font-size: 12px;
+            margin-left: -35px;
+            width: 100px;
+            margin-bottom: 0px;
+            margin-top: 105px;
+    display: inline-block;
+    font-family: "Pt-serif";
+        }            
+        
+.padding {
+            padding-top: 0px;
+            display: inline-block;
+            border-radius: 1px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+  img {
+            display: inline-block;
+        }               
+
+.imginline
+        {
+            display: inline;
+        }
+
+        
+        
+        
+
+input[type=text] {
+  width:12em;
+ background: rgba(0, 0, 0, 0.0);
+  border: 0;
+  margin: 0.5em 0;
+  padding:0.1em 0.5em;
+  line-height:1.3em;
+  height:3em;
+  display:inline;
+  vertical-align:bottom;
+  color:#414141;
+     border-style: solid;
+    border-width:0 0 1px 0;
+    
+}
+textarea {
+  margin: 0.5em 0;
+  width:12em;
+  border: 0;
+  padding:0.1em 0.5em;
+  line-height:1.3em;
+  height:10em;
+  display:inline;
+  vertical-align:bottom;
+  color:#414141;
+ background: rgba(0, 0, 0, 0.0);
+    
+}
+button, #submit-form {  
+  border:0;
+  width:4em;
+  margin: 0.5em 0;
+  padding:0.1em 0.5em;
+  line-height:1.3em;
+  height:3em;
+  vertical-align:bottom;
+  text-align:center;
+  cursor: pointer;
+  display:inline;
+  font-weight:400;
+  text-transform:uppercase;
+  color:#B60A16;
+  text-decoration:none;
+    background: rgba(0, 0, 0, 0.0);
+    border-style: solid;
+    border-width:0 0 1px 0;
+}
+        
+        .but {
+            background: rgba(0, 0, 0, 0.0);
+        }        
+        
+#submit-form:hover {
+  background:#B60A16;
+    color:white;
+}
+        
+label {
+  display:none;
+}
+        
+.form-container {
+  margin-bottom: 0;
+  margin-left:586px;
+    margin-top:-5px;
+  display: inline-block;
+  border-radius: 4px;
+
+}
+             
+form {
+  display:inline-block;
+    border-radius: 4px;
+    color: lightgray;
+}       
+        
+.width {
+    margin-top:-5px;
+            width:285px;
+    font-family: "Pt-serif";
+    font-size: 12px;
+    color:#414141;
+    line-height: 14px;
+    
+    
+        }        
+        
+        a {
+            text-decoration: none;
+            color: #B60A16;
+            
+        }        
+        
+        a:hover {
+        text-decoration: underline;    
+        }
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+      
+/* Footer */        
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:1%;
+   background-color: #B60A16;
+   margin:auto;
+   padding:15px 0 15px 0;   
+    
+        }  
+
+.foot {
+    margin-left: 65px;
+    margin-top:-3px;
+    color: lightgray;
+    width: 773px;
+    font-size:10px;
+    
+}  
+        
+       
+        
+        
+body {
+    background-color:white;
+            background-image:url(bg.jpg);
+            background-repeat:no-repeat;
+            background-position: center ;
+    background-size: cover;
+    height:1000px;
+        }
+        html {
+            overflow: hidden;
+        }   
+        
+        
+        
+.letpop:hover{
+  cursor: pointer;
+}
+        
+    
+.pop{
+  display: none; /* Default Hidden */
+  position: fixed;
+  top: 55px;
+  left: 650px;
+  z-index: 2;
+  background-color: #fff;
+  height: 360px;
+  width: 800px;
+  overflow: hidden;
+  padding: 40px;
+  transform: translate(-50%, 0);
+  margin-top: 90px;
+    border-radius:5px;
+}     
+.lay{
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+}            
+        .p {
+            display: inline;
+            position: relative;
+            width: 102px;
+            color:#414141;
+            font-size: 12px;
+            float: right;
+            margin-right: 460px;
+            margin-left: 0px;
+            margin-top: -55px;
+            font-family: "PT-serif";
+            color: #B60A16;
+            border: 1px solid #B60A16;
+            border-radius: 4px;
+            padding: 4px 0px 4px 8px;
+            
+        }
+        .p:hover {
+            text-decoration: none;
+            background: #B60A16;
+            color: white;
+            transition: 0.3s;
+        } 
+        
+/* subscribe by email */        
+.col-1 {
+    float: left;
+    width: 70%;
+    font-size: 12px;
+    margin-bottom:-30px;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: -50px;
+    font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}        
+        
+.col-2 {
+    float: left;
+    width: 85%;
+    font-size: 12px;
+    margin-bottom:-10px;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: -50px;
+    font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}             
+        
+.col-3 {
+    float: left;
+    width: 70%;
+    font-size: 12px;
+    margin-bottom:-30px;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: -50px;
+    font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}        
+        
+.col-4 {
+    float: left;
+    width: 85%;
+    font-size: 12px;
+    margin-bottom:-10px;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: -50px;
+    font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}        
+
+.margin {
+            margin-left: 50px;
+            margin-top: 50px;
+        }  
+        
+.submitt {
+     padding-top: 140px;
+    margin-left: -50px;
+    display: inline-block;
+        }        
+        
+
+.submitt:after {
+    content: "";
+   
+    margin-left:0px;
+    display: table;
+    clear: both;
+    width: 100px;
+    display: inline-block;
+}               
+        
+input[type="good"] {
+  width:12em;
+  background-color:#fff;
+  border: 0;
+  margin: 0.5em 0;
+  padding:0.1em 0.5em;
+  line-height:1.3em;
+  height:3em;
+  display:inline;
+  vertical-align:bottom;
+  color:lightgray;
+    
+}
+        
+input[type="good"], select, textarea {
+    width: 100%;
+    padding: 12px;
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+input[type="nice"] {
+    background-color: white;
+    color: #B60A16;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    border-radius: 4px;
+    border: 1px solid #B60A16;
+}
+
+input[type="nice"]:hover {
+    background-color: #B60A16;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+}        
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="container">
+            <a href="index2.html"><img div class="imginline" src="img/logo.jpg" alt="Smiley face" width="100"></a>
+           <p class="address">
+        140 W Mt Royal Ave, Baltimore, MD 21201 / (410) 685-5086
+        </p> 
+            <!-- unfinished 
+            <div class="letpop"><p class="p"> <i>Subscribe by Email</i></p></div>
+            -->
+        <ul>
+            <li data-menuanchor="Home" ><a href="index2.html" style="color:#B60A16">TICKETS</a></li>
+            <li data-menuanchor="General Info"><a href="GeneralInfo.html" >GENERAL INFO</a></li>
+            <li data-menuanchor="Membership"><a href="Membership.html" >MEMEBERSHIP</a></li>
+            <li data-menuanchor="Contact" ><a href="Contact.html" >CONTACT</a></li>
+        </ul>
+        
+        </div>
+        <hr align="center">
+    </header>
+    
+    
+    
+<!-- Subscribe Pop Up -->
+    
+<div class="lay"></div>
+<!-- Popup -->
+<div class="pop">
+    
+<h10>Join Our Email List & Get The Latest Info</h10>
+    <p class="info">We’ll keep you informed electronically of what great acts are coming to The Lyric. Enter your email address below to receive our Upcoming Events list in your email box on a regular basis. Your information will be kept confidential and will not be sold to advertisers.</p>
+    
+    <div class="margin">
+      <div class="col-1">
+        <label for="fname" >Name</label>
+      </div>
+      <div class="col-2">
+        <input style="inputt" type="good" id="fname" name="firstname" placeholder="full name">
+      </div>
+        <div class="col-3">
+        <label for="fname" >Email</label>
+      </div>
+    <div class="col-4">
+        <input style="inputt" type="good" id="fname" name="firstname" placeholder="email address">
+      </div>
+        <div class="submitt">
+      <input type="nice" value="Subscribe">
+    </div>
+          <div class="close">&#x2715;</div>
+
+ </div>
+    
+</div>    
+    
+    
+
+    
+    
+    
+    
+
+
+
+    <!-- Overlay -->
+    
+<div class="overlay"></div>
+<!-- Popup -->
+<div class="popup">
+
+       
+  
+    <h1>Dave Chappelle Live</h1>
+     <div class="vl"></div>
+    <h2>Date</h2>
+        <p class="address2">June 8 @ 7:00 pm</p>
+    
+    <div class="vl3"></div>
+    <h3>Tickets</h3>
+    
+    
+   <p class="address5"><a href="https://www1.ticketmaster.com/event/150054B59CAB1BAB" target="_blank"><i>Click Here</i></a></p>
+    
+    
+    <img div class="padding" src="img/dave.jpg" width="35%" height="30%">
+    
+    
+    <p div class="width">Dave Chappelle is a stand-up comedian and actor whose trademark wit and sharp irreverent social commentary explores race, popular culture, sex, drugs, politics and fame. Arguably the most touring comic on the circuit, Chappelle has performed over 1000 concerts in the past four years, selling out shows within minutes of the announcements. In 2017, Chappelle celebrated 30 years in comedy by releasing not two but four highly anticipated stand-up specials on Netflix.  The first two specials, The Age of Spin and Deep in the Heart of Texas, released in March. He received an Emmy Award for his debut episode on Saturday Night Live.</p>
+    
+    
+    
+    <div class="vl2"></div>
+    <h2 >Price Range</h2>
+    <p class="address3">$ 60 – 70</p>
+       <div class="vl4"></div>
+    <h4>Be the First to Know!</h4>
+      <div class="form-container">
+  <form method="POST" action="http://api.formspree.com/your@email.com">
+    
+    <input id="email-input" name="field" maxlength="25" type="text" autocomplete="on" placeholder="(+1)">
+        
+    <button id="submit-form" class="but"  type="submit">Send</button>
+  </form>
+</div>
+     <div class="vl5"></div>
+    <h5>Google Calendar</h5>
+    <p class="address6"><a href="https://www.google.com/calendar/event?action=TEMPLATE&text=Dave+Chappelle&dates=20180608T190000/20180608T190000&details=Dave+Chappelle+is+a+stand-up+comedian+and+actor+whose+trademark+wit+and+sharp+irreverent+social+commentary+explores+race%2C+popular+culture%2C+sex%2C+drugs%2C+politics+and+fame.%C2%A0Arguably+the+most+touring+comic+on+the+circuit%2C+Chappelle+has+performed+over+1000%C2%A0concerts+in+the+past+four+years%2C+selling+out+shows+within+minutes+of+the+announcements.+In%C2%A02017%2C%C2%A0Chappelle+celebrated+30+years+in+comedy+by+releasing+not+two+but%C2%A0four%C2%A0highly+anticipated+stand-up+specials+on+Netflix.+%C2%A0The+first+two+specials%2C%C2%A0The+Age+of+Spin%C2%A0and%C2%A0Deep+in%C2%A0the+Heart+of+Texas%2C%C2%A0released+in%C2%A0March.%C2%A0He+received+an+Emmy+Award+for+his+debut+episode+on+Saturday+Night+Live.+His+memorable+and%C2%A0panoramic+monologue%C2%A0was+the+comic+relief+the+country+needed+following+the+2016+Presidential+election+which+personified+our+nation%E2%80%99s+deep+racial+divide.%C2%A0He+capped+off+the+year+by+releasing+the+remaining+two+stand-up+specials%2C%C2%A0Equanimity%C2%A0and%C2%A0The+Bird+Revelations%2C%C2%A0on+New+Year%E2%80%99s+Eve.%C2%A0In+2018%2C+Chappelle+received%C2%A0Pollstar%E2%80+%28View+Full+Event+Description+Here%3A+https%3A%2F%2Fmodell-lyric.com%2Fevent%2Fdave-chappelle%2F%29&location=140+W.+Mt+Royal+Ave.%2C+Baltimore%2C+MD%2C+21201%2C+United+States&trp=false&sprop=website:https://modell-lyric.com&ctz=America%2FNew_York" style="color:#B60A16" target="_blank"><i>Add to Calendar</i></a></p>
+<div class="vl6"></div>
+    <h6>iCAL</h6>
+    <p class="address7"><a href=""style="color:#B60A16" target="_blank"><i>Add to iCal</i></a></p>
+  <div class="close">&#x2715;</div>
+</div>
+    
+    
+    
+    
+    
+    <!-- Overlay1 -->
+    
+<div class="overlay1"></div>
+<!-- Popup -->
+<div class="popup1">
+
+       
+  
+    <h1>Bring it Live!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+     <div class="vl"></div>
+    <h2>Date</h2>
+        <p class="address2">June 8 @ 7:00 pm</p>
+    
+    <div class="vl3"></div>
+    <h3>Tickets</h3>
+    
+    
+   <p class="address5"><a href="https://www1.ticketmaster.com/event/150054B59CAB1BAB" target="_blank"><i>Click Here</i></a></p>
+    
+    
+    <img div class="padding" src="img/jill.jpg" width="35%" height="30%">
+    
+    
+    <p div class="width">After two consecutive years of bringing down the house, “Bring It! Live” is back by overwhelming demand, and set to take the stage in Baltimore.<br><br>
+
+In 2016, the elite world of hip-hop majorette competition was brought to the main stage for the first time with an incomparable energy that took the country by storm. Audiences across the nation were enamored by the fierce, original, high-octane performances that inspired fans of all ages and left them clamoring for more.  With hotter-than-ever, never-before-seen performances on deck for the 2018 tour, there has never been a better time for Bring It! fans.</p>
+    
+    
+    
+    <div class="vl2"></div>
+    <h2 >Price Range</h2>
+    <p class="address3">$ 60 – 70</p>
+       <div class="vl4"></div>
+    <h4>Be the First to Know!</h4>
+      <div class="form-container">
+  <form method="POST" action="http://api.formspree.com/your@email.com">
+    
+    <input id="email-input" name="field" maxlength="25" type="text" autocomplete="on" placeholder="(+1)" >
+        
+    <button id="submit-form" type="submit">Send</button>
+  </form>
+</div>
+     <div class="vl5"></div>
+    <h5>Google Calendar</h5>
+    <p class="address6"><a href="https://www.google.com/calendar/event?action=TEMPLATE&text=Dave+Chappelle&dates=20180608T190000/20180608T190000&details=Dave+Chappelle+is+a+stand-up+comedian+and+actor+whose+trademark+wit+and+sharp+irreverent+social+commentary+explores+race%2C+popular+culture%2C+sex%2C+drugs%2C+politics+and+fame.%C2%A0Arguably+the+most+touring+comic+on+the+circuit%2C+Chappelle+has+performed+over+1000%C2%A0concerts+in+the+past+four+years%2C+selling+out+shows+within+minutes+of+the+announcements.+In%C2%A02017%2C%C2%A0Chappelle+celebrated+30+years+in+comedy+by+releasing+not+two+but%C2%A0four%C2%A0highly+anticipated+stand-up+specials+on+Netflix.+%C2%A0The+first+two+specials%2C%C2%A0The+Age+of+Spin%C2%A0and%C2%A0Deep+in%C2%A0the+Heart+of+Texas%2C%C2%A0released+in%C2%A0March.%C2%A0He+received+an+Emmy+Award+for+his+debut+episode+on+Saturday+Night+Live.+His+memorable+and%C2%A0panoramic+monologue%C2%A0was+the+comic+relief+the+country+needed+following+the+2016+Presidential+election+which+personified+our+nation%E2%80%99s+deep+racial+divide.%C2%A0He+capped+off+the+year+by+releasing+the+remaining+two+stand-up+specials%2C%C2%A0Equanimity%C2%A0and%C2%A0The+Bird+Revelations%2C%C2%A0on+New+Year%E2%80%99s+Eve.%C2%A0In+2018%2C+Chappelle+received%C2%A0Pollstar%E2%80+%28View+Full+Event+Description+Here%3A+https%3A%2F%2Fmodell-lyric.com%2Fevent%2Fdave-chappelle%2F%29&location=140+W.+Mt+Royal+Ave.%2C+Baltimore%2C+MD%2C+21201%2C+United+States&trp=false&sprop=website:https://modell-lyric.com&ctz=America%2FNew_York" style="color:#B60A16" target="_blank"><i>Add to Calendar</i></a></p>
+<div class="vl6"></div>
+    <h6>iCAL</h6>
+    <p class="address7"><a href=""style="color:#B60A16" target="_blank"><i>Add to iCal</i></a></p>
+  <div class="close">&#x2715;</div>
+</div>    
+    
+    
+<!-- Overlay2 -->
+    
+<div class="overlay2"></div>
+<!-- Popup -->
+<div class="popup2">
+
+       
+  
+    <h1>John Cleese Live&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+     <div class="vl"></div>
+    <h2>Date</h2>
+        <p class="address2">June 8 @ 7:00 pm</p>
+    
+    <div class="vl3"></div>
+    <h3>Tickets</h3>
+    
+    
+   <p class="address5"><a href="https://www1.ticketmaster.com/event/150054B59CAB1BAB" target="_blank"><i>Click Here</i></a></p>
+    
+    
+    <img div class="padding" src="img/john.jpg" width="35%" height="30%">
+    
+    
+    <p div class="width">Living comedy legend, JOHN CLEESE, is heading in your general direction for a live and truly unforgettable evening of conversation and audience Q&A on Saturday, July 28th at 7:30pm. Absurd and/or ridiculous questions only, please. A limited number of VIP tickets will be available which include a photo opportunity with John.<br><br>
+
+John will tell stories of his life and career and you just may finally find out the air-speed of an unladen swallow. Before John silly walks his way on to the stage, the excitement will build as the audience will get to watch Monty Python and the Holy Grail in its entirety on the big screen.<br><br></p>
+    
+    
+    
+    <div class="vl2"></div>
+    <h2 >Price Range</h2>
+    <p class="address3">$ 60 – 70</p>
+       <div class="vl4"></div>
+    <h4>Be the First to Know!</h4>
+      <div class="form-container">
+  <form method="POST" action="http://api.formspree.com/your@email.com">
+    
+    <input id="email-input" name="field" maxlength="25" type="text" autocomplete="on" placeholder="(+1)">
+        
+    <button id="submit-form" type="submit">Send</button>
+  </form>
+</div>
+     <div class="vl5"></div>
+    <h5>Google Calendar</h5>
+    <p class="address6"><a href="https://www.google.com/calendar/event?action=TEMPLATE&text=Dave+Chappelle&dates=20180608T190000/20180608T190000&details=Dave+Chappelle+is+a+stand-up+comedian+and+actor+whose+trademark+wit+and+sharp+irreverent+social+commentary+explores+race%2C+popular+culture%2C+sex%2C+drugs%2C+politics+and+fame.%C2%A0Arguably+the+most+touring+comic+on+the+circuit%2C+Chappelle+has+performed+over+1000%C2%A0concerts+in+the+past+four+years%2C+selling+out+shows+within+minutes+of+the+announcements.+In%C2%A02017%2C%C2%A0Chappelle+celebrated+30+years+in+comedy+by+releasing+not+two+but%C2%A0four%C2%A0highly+anticipated+stand-up+specials+on+Netflix.+%C2%A0The+first+two+specials%2C%C2%A0The+Age+of+Spin%C2%A0and%C2%A0Deep+in%C2%A0the+Heart+of+Texas%2C%C2%A0released+in%C2%A0March.%C2%A0He+received+an+Emmy+Award+for+his+debut+episode+on+Saturday+Night+Live.+His+memorable+and%C2%A0panoramic+monologue%C2%A0was+the+comic+relief+the+country+needed+following+the+2016+Presidential+election+which+personified+our+nation%E2%80%99s+deep+racial+divide.%C2%A0He+capped+off+the+year+by+releasing+the+remaining+two+stand-up+specials%2C%C2%A0Equanimity%C2%A0and%C2%A0The+Bird+Revelations%2C%C2%A0on+New+Year%E2%80%99s+Eve.%C2%A0In+2018%2C+Chappelle+received%C2%A0Pollstar%E2%80+%28View+Full+Event+Description+Here%3A+https%3A%2F%2Fmodell-lyric.com%2Fevent%2Fdave-chappelle%2F%29&location=140+W.+Mt+Royal+Ave.%2C+Baltimore%2C+MD%2C+21201%2C+United+States&trp=false&sprop=website:https://modell-lyric.com&ctz=America%2FNew_York" style="color:#B60A16" target="_blank"><i>Add to Calendar</i></a></p>
+<div class="vl6"></div>
+    <h6>iCAL</h6>
+    <p class="address7"><a href=""style="color:#B60A16" target="_blank"><i>Add to iCal</i></a></p>
+  <div class="close">&#x2715;</div>
+</div>        
+    
+<!-- Overlay3 -->
+    
+<div class="overlay3"></div>
+<!-- Popup -->
+<div class="popup3">
+
+       
+  
+    <h1>Oh Come on&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+     <div class="vl"></div>
+    <h2>Date</h2>
+        <p class="address2">June 8 @ 7:00 pm</p>
+    
+    <div class="vl3"></div>
+    <h3>Tickets</h3>
+    
+    
+   <p class="address5"><a href="https://www1.ticketmaster.com/event/150054B59CAB1BAB" target="_blank"><i>Click Here</i></a></p>
+    
+    
+    <img div class="padding" src="img/david.jpg" width="35%" height="30%">
+    
+    
+    <p div class="width">“I am beyond aroused to get back out on the road and bring my very special, artisanal small batch hand crafted, 100% organic jokes & jibberings to a venue near you,” stated Cross.  “These jokes are kid tested and mother approved so bring the whole family!”<br><br>
+
+ 
+
+The David Cross: Oh Come On tour is David’s first full tour since his 2016, Making America Great Again tour, which toured throughout North America and Europe, producing the Netflix special of the same name and the Grammy nominated CD, …America…Great.
+
+ </p>
+    
+    
+    
+    <div class="vl2"></div>
+    <h2 >Price Range</h2>
+    <p class="address3">$ 60 – 70</p>
+       <div class="vl4"></div>
+    <h4>Be the First to Know!</h4>
+      <div class="form-container">
+  <form method="POST" action="http://api.formspree.com/your@email.com">
+    
+    <input id="email-input" name="field" maxlength="25" type="text" autocomplete="on" placeholder="(+1)">
+        
+    <button id="submit-form" type="submit">Send</button>
+  </form>
+</div>
+     <div class="vl5"></div>
+    <h5>Google Calendar</h5>
+    <p class="address6"><a href="https://www.google.com/calendar/event?action=TEMPLATE&text=Dave+Chappelle&dates=20180608T190000/20180608T190000&details=Dave+Chappelle+is+a+stand-up+comedian+and+actor+whose+trademark+wit+and+sharp+irreverent+social+commentary+explores+race%2C+popular+culture%2C+sex%2C+drugs%2C+politics+and+fame.%C2%A0Arguably+the+most+touring+comic+on+the+circuit%2C+Chappelle+has+performed+over+1000%C2%A0concerts+in+the+past+four+years%2C+selling+out+shows+within+minutes+of+the+announcements.+In%C2%A02017%2C%C2%A0Chappelle+celebrated+30+years+in+comedy+by+releasing+not+two+but%C2%A0four%C2%A0highly+anticipated+stand-up+specials+on+Netflix.+%C2%A0The+first+two+specials%2C%C2%A0The+Age+of+Spin%C2%A0and%C2%A0Deep+in%C2%A0the+Heart+of+Texas%2C%C2%A0released+in%C2%A0March.%C2%A0He+received+an+Emmy+Award+for+his+debut+episode+on+Saturday+Night+Live.+His+memorable+and%C2%A0panoramic+monologue%C2%A0was+the+comic+relief+the+country+needed+following+the+2016+Presidential+election+which+personified+our+nation%E2%80%99s+deep+racial+divide.%C2%A0He+capped+off+the+year+by+releasing+the+remaining+two+stand-up+specials%2C%C2%A0Equanimity%C2%A0and%C2%A0The+Bird+Revelations%2C%C2%A0on+New+Year%E2%80%99s+Eve.%C2%A0In+2018%2C+Chappelle+received%C2%A0Pollstar%E2%80+%28View+Full+Event+Description+Here%3A+https%3A%2F%2Fmodell-lyric.com%2Fevent%2Fdave-chappelle%2F%29&location=140+W.+Mt+Royal+Ave.%2C+Baltimore%2C+MD%2C+21201%2C+United+States&trp=false&sprop=website:https://modell-lyric.com&ctz=America%2FNew_York" style="color:#B60A16" target="_blank"><i>Add to Calendar</i></a></p>
+<div class="vl6"></div>
+    <h6>iCAL</h6>
+    <p class="address7"><a href=""style="color:#B60A16" target="_blank"><i>Add to iCal</i></a></p>
+  <div class="close">&#x2715;</div>
+</div>        
+    
+ <!-- Overlay4 -->
+    
+<div class="overlay4"></div>
+<!-- Popup -->
+<div class="popup4">
+
+       
+  
+    <h1>American Idol Live!&nbsp;</h1>
+     <div class="vl"></div>
+    <h2>Date</h2>
+        <p class="address2">June 8 @ 7:00 pm</p>
+    
+    <div class="vl3"></div>
+    <h3>Tickets</h3>
+    
+    
+   <p class="address5"><a href="https://www1.ticketmaster.com/event/150054B59CAB1BAB" target="_blank"><i>Click Here</i></a></p>
+    
+    
+    <img div class="padding" src="img/idol.jpg" width="35%" height="30%">
+    
+    
+    <p div class="width">American Idol is back on tour! American Idol: Live! 2018 is coming to a city near you featuring your Top 7 LIVE on stage, including your 2018 American Idol Winner! Cade, Caleb, Catie, Gabby, Jurnee, Maddie and Michael plus special guest, Season 8 American Idol Winner, Kris Allen bringing your favorite television competition directly to you in performances you cannot miss!</p>
+    
+    
+    
+    <div class="vl2"></div>
+    <h2 >Price Range</h2>
+    <p class="address3">$ 60 – 70</p>
+       <div class="vl4"></div>
+    <h4>Be the First to Know!</h4>
+      <div class="form-container">
+  <form method="POST" action="http://api.formspree.com/your@email.com">
+    
+    <input id="email-input" name="field" maxlength="25" type="text" autocomplete="on" placeholder="(+1)">
+        
+    <button id="submit-form" type="submit">Send</button>
+  </form>
+</div>
+     <div class="vl5"></div>
+    <h5>Google Calendar</h5>
+    <p class="address6"><a href="https://www.google.com/calendar/event?action=TEMPLATE&text=Dave+Chappelle&dates=20180608T190000/20180608T190000&details=Dave+Chappelle+is+a+stand-up+comedian+and+actor+whose+trademark+wit+and+sharp+irreverent+social+commentary+explores+race%2C+popular+culture%2C+sex%2C+drugs%2C+politics+and+fame.%C2%A0Arguably+the+most+touring+comic+on+the+circuit%2C+Chappelle+has+performed+over+1000%C2%A0concerts+in+the+past+four+years%2C+selling+out+shows+within+minutes+of+the+announcements.+In%C2%A02017%2C%C2%A0Chappelle+celebrated+30+years+in+comedy+by+releasing+not+two+but%C2%A0four%C2%A0highly+anticipated+stand-up+specials+on+Netflix.+%C2%A0The+first+two+specials%2C%C2%A0The+Age+of+Spin%C2%A0and%C2%A0Deep+in%C2%A0the+Heart+of+Texas%2C%C2%A0released+in%C2%A0March.%C2%A0He+received+an+Emmy+Award+for+his+debut+episode+on+Saturday+Night+Live.+His+memorable+and%C2%A0panoramic+monologue%C2%A0was+the+comic+relief+the+country+needed+following+the+2016+Presidential+election+which+personified+our+nation%E2%80%99s+deep+racial+divide.%C2%A0He+capped+off+the+year+by+releasing+the+remaining+two+stand-up+specials%2C%C2%A0Equanimity%C2%A0and%C2%A0The+Bird+Revelations%2C%C2%A0on+New+Year%E2%80%99s+Eve.%C2%A0In+2018%2C+Chappelle+received%C2%A0Pollstar%E2%80+%28View+Full+Event+Description+Here%3A+https%3A%2F%2Fmodell-lyric.com%2Fevent%2Fdave-chappelle%2F%29&location=140+W.+Mt+Royal+Ave.%2C+Baltimore%2C+MD%2C+21201%2C+United+States&trp=false&sprop=website:https://modell-lyric.com&ctz=America%2FNew_York" style="color:#B60A16" target="_blank"><i>Add to Calendar</i></a></p>
+<div class="vl6"></div>
+    <h6>iCAL</h6>
+    <p class="address7"><a href=""style="color:#B60A16" target="_blank"><i>Add to iCal</i></a></p>
+  <div class="close">&#x2715;</div>
+</div>       
+    
+ <!-- Overlay5 -->
+    
+<div class="overlay5"></div>
+<!-- Popup -->
+<div class="popup5">
+
+       
+  
+    <h1>The Decemberists&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+     <div class="vl"></div>
+    <h2>Date</h2>
+        <p class="address2">June 8 @ 7:00 pm</p>
+    
+    <div class="vl3"></div>
+    <h3>Tickets</h3>
+    
+    
+   <p class="address5"><a href="https://www1.ticketmaster.com/event/150054B59CAB1BAB" target="_blank"><i>Click Here</i></a></p>
+    
+    
+    <img div class="padding" src="img/december.jpg" width="35%" height="30%">
+    
+    
+    <p div class="width">The Decemberists explore a new sound with a new producer on their inspired eighth studio album I’ll Be Your Girl, which was released March 16 on Capitol Records. The acclaimed Portland, Oregon-based band worked with producer John Congleton (St. Vincent, Lana del Rey) and embraced influences such as Roxy Music and New Order to spark a new creative path, as can be heard on the synth-driven lead single “Severed.”</p>
+    
+    
+    
+    <div class="vl2"></div>
+    <h2 >Price Range</h2>
+    <p class="address3">$ 60 – 70</p>
+       <div class="vl4"></div>
+    <h4>Be the First to Know!</h4>
+      <div class="form-container">
+  <form method="POST" action="http://api.formspree.com/your@email.com">
+    
+    <input id="email-input" name="field" maxlength="25" type="text" autocomplete="on" placeholder="(+1)">
+        
+    <button id="submit-form" type="submit">Send</button>
+  </form>
+</div>
+     <div class="vl5"></div>
+    <h5>Google Calendar</h5>
+    <p class="address6"><a href="https://www.google.com/calendar/event?action=TEMPLATE&text=Dave+Chappelle&dates=20180608T190000/20180608T190000&details=Dave+Chappelle+is+a+stand-up+comedian+and+actor+whose+trademark+wit+and+sharp+irreverent+social+commentary+explores+race%2C+popular+culture%2C+sex%2C+drugs%2C+politics+and+fame.%C2%A0Arguably+the+most+touring+comic+on+the+circuit%2C+Chappelle+has+performed+over+1000%C2%A0concerts+in+the+past+four+years%2C+selling+out+shows+within+minutes+of+the+announcements.+In%C2%A02017%2C%C2%A0Chappelle+celebrated+30+years+in+comedy+by+releasing+not+two+but%C2%A0four%C2%A0highly+anticipated+stand-up+specials+on+Netflix.+%C2%A0The+first+two+specials%2C%C2%A0The+Age+of+Spin%C2%A0and%C2%A0Deep+in%C2%A0the+Heart+of+Texas%2C%C2%A0released+in%C2%A0March.%C2%A0He+received+an+Emmy+Award+for+his+debut+episode+on+Saturday+Night+Live.+His+memorable+and%C2%A0panoramic+monologue%C2%A0was+the+comic+relief+the+country+needed+following+the+2016+Presidential+election+which+personified+our+nation%E2%80%99s+deep+racial+divide.%C2%A0He+capped+off+the+year+by+releasing+the+remaining+two+stand-up+specials%2C%C2%A0Equanimity%C2%A0and%C2%A0The+Bird+Revelations%2C%C2%A0on+New+Year%E2%80%99s+Eve.%C2%A0In+2018%2C+Chappelle+received%C2%A0Pollstar%E2%80+%28View+Full+Event+Description+Here%3A+https%3A%2F%2Fmodell-lyric.com%2Fevent%2Fdave-chappelle%2F%29&location=140+W.+Mt+Royal+Ave.%2C+Baltimore%2C+MD%2C+21201%2C+United+States&trp=false&sprop=website:https://modell-lyric.com&ctz=America%2FNew_York" style="color:#B60A16" target="_blank"><i>Add to Calendar</i></a></p>
+<div class="vl6"></div>
+    <h6>iCAL</h6>
+    <p class="address7"><a href=""style="color:#B60A16" target="_blank"><i>Add to iCal</i></a></p>
+  <div class="close">&#x2715;</div>
+</div>       
+
+<!-- Overlay6 -->
+    
+<div class="overlay6"></div>
+<!-- Popup -->
+<div class="popup6">
+
+       
+  
+    <h1>Celtic Thunder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+     <div class="vl"></div>
+    <h2>Date</h2>
+        <p class="address2">June 8 @ 7:00 pm</p>
+    
+    <div class="vl3"></div>
+    <h3>Tickets</h3>
+    
+    
+   <p class="address5"><a href="https://www1.ticketmaster.com/event/150054B59CAB1BAB" target="_blank"><i>Click Here</i></a></p>
+    
+    
+    <img div class="padding" src="img/celtic.jpg" width="35%" height="30%">
+    
+    
+    <p div class="width">There’s no resting on your laurels for Public Television phenomenon Celtic Thunder!<br><br>
+
+The brand new music and footage from CELTIC THUNDER X is also a highly anticipated television special, which will begin airing nationally on March 1, 2018. The special was filmed in Dublin on October 30, 2017 at the Helix Theatre.  Celtic Thunder has become one of public television’s largest draws. Their shows have aired over 22,500 times across 50 states on PBS. The group is among the top five audience-generating acts on the network. Check local listings for airing dates/times of Celtic Thunder’s new CELTIC THUNDER X special.</p>
+    
+    
+    
+    <div class="vl2"></div>
+    <h2 >Price Range</h2>
+    <p class="address3">$ 60 – 70</p>
+       <div class="vl4"></div>
+    <h4>Be the First to Know!</h4>
+      <div class="form-container">
+  <form method="POST" action="http://api.formspree.com/your@email.com">
+    
+    <input id="email-input" name="field" maxlength="25" type="text" autocomplete="on" placeholder="(+1)">
+        
+    <button id="submit-form" type="submit">Send</button>
+  </form>
+</div>
+     <div class="vl5"></div>
+    <h5>Google Calendar</h5>
+    <p class="address6"><a href="https://www.google.com/calendar/event?action=TEMPLATE&text=Dave+Chappelle&dates=20180608T190000/20180608T190000&details=Dave+Chappelle+is+a+stand-up+comedian+and+actor+whose+trademark+wit+and+sharp+irreverent+social+commentary+explores+race%2C+popular+culture%2C+sex%2C+drugs%2C+politics+and+fame.%C2%A0Arguably+the+most+touring+comic+on+the+circuit%2C+Chappelle+has+performed+over+1000%C2%A0concerts+in+the+past+four+years%2C+selling+out+shows+within+minutes+of+the+announcements.+In%C2%A02017%2C%C2%A0Chappelle+celebrated+30+years+in+comedy+by+releasing+not+two+but%C2%A0four%C2%A0highly+anticipated+stand-up+specials+on+Netflix.+%C2%A0The+first+two+specials%2C%C2%A0The+Age+of+Spin%C2%A0and%C2%A0Deep+in%C2%A0the+Heart+of+Texas%2C%C2%A0released+in%C2%A0March.%C2%A0He+received+an+Emmy+Award+for+his+debut+episode+on+Saturday+Night+Live.+His+memorable+and%C2%A0panoramic+monologue%C2%A0was+the+comic+relief+the+country+needed+following+the+2016+Presidential+election+which+personified+our+nation%E2%80%99s+deep+racial+divide.%C2%A0He+capped+off+the+year+by+releasing+the+remaining+two+stand-up+specials%2C%C2%A0Equanimity%C2%A0and%C2%A0The+Bird+Revelations%2C%C2%A0on+New+Year%E2%80%99s+Eve.%C2%A0In+2018%2C+Chappelle+received%C2%A0Pollstar%E2%80+%28View+Full+Event+Description+Here%3A+https%3A%2F%2Fmodell-lyric.com%2Fevent%2Fdave-chappelle%2F%29&location=140+W.+Mt+Royal+Ave.%2C+Baltimore%2C+MD%2C+21201%2C+United+States&trp=false&sprop=website:https://modell-lyric.com&ctz=America%2FNew_York" style="color:#B60A16" target="_blank"><i>Add to Calendar</i></a></p>
+<div class="vl6"></div>
+    <h6>iCAL</h6>
+    <p class="address7"><a href=""style="color:#B60A16" target="_blank"><i>Add to iCal</i></a></p>
+  <div class="close">&#x2715;</div>
+</div>    
+    
+    
+    
+<!-- Overlay7 -->
+    
+<div class="overlay7"></div>
+<!-- Popup -->
+<div class="popup7">
+
+       
+  
+    <h1>Bill Burr&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+     <div class="vl"></div>
+    <h2>Date</h2>
+        <p class="address2">June 8 @ 7:00 pm</p>
+    
+    <div class="vl3"></div>
+    <h3>Tickets</h3>
+    
+    
+   <p class="address5"><a href="https://www1.ticketmaster.com/event/150054B59CAB1BAB" target="_blank"><i>Click Here</i></a></p>
+    
+    
+    <img div class="padding" src="img/bill.jpg" width="35%" height="30%">
+    
+    
+    <p div class="width">The hilarious Bill Burr comes to the Modell Lyric October 18th at 7:00pm for one night only! Bill Burr is an American comedian or a comedian from the North American Union, depending on when you read this.  He grew up outside of Boston, Massachusetts and did fairly poorly in school, despite the fact that he applied himself.<br><br>
+    In 2018, Bill will be seen in the film, The Front Runner, starring Hugh Jackman and later this year, the third season of Bill’s hit animated Netflix series, F Is For Family, will premiere featuring Bill, Laura Dern and Justin Long as the Murphy family.  The second season premiered on May 30, 2017, and the first season premiered on December, 2015.
+
+</p>
+    
+    
+    
+    <div class="vl2"></div>
+    <h2 >Price Range</h2>
+    <p class="address3">$ 60 – 70</p>
+       <div class="vl4"></div>
+    <h4>Be the First to Know!</h4>
+      <div class="form-container">
+  <form method="POST" action="http://api.formspree.com/your@email.com">
+    
+    <input id="email-input" name="field" maxlength="25" type="text" autocomplete="on" placeholder="(+1)">
+        
+    <button id="submit-form" type="submit">Send</button>
+  </form>
+</div>
+     <div class="vl5"></div>
+    <h5>Google Calendar</h5>
+    <p class="address6"><a href="https://www.google.com/calendar/event?action=TEMPLATE&text=Dave+Chappelle&dates=20180608T190000/20180608T190000&details=Dave+Chappelle+is+a+stand-up+comedian+and+actor+whose+trademark+wit+and+sharp+irreverent+social+commentary+explores+race%2C+popular+culture%2C+sex%2C+drugs%2C+politics+and+fame.%C2%A0Arguably+the+most+touring+comic+on+the+circuit%2C+Chappelle+has+performed+over+1000%C2%A0concerts+in+the+past+four+years%2C+selling+out+shows+within+minutes+of+the+announcements.+In%C2%A02017%2C%C2%A0Chappelle+celebrated+30+years+in+comedy+by+releasing+not+two+but%C2%A0four%C2%A0highly+anticipated+stand-up+specials+on+Netflix.+%C2%A0The+first+two+specials%2C%C2%A0The+Age+of+Spin%C2%A0and%C2%A0Deep+in%C2%A0the+Heart+of+Texas%2C%C2%A0released+in%C2%A0March.%C2%A0He+received+an+Emmy+Award+for+his+debut+episode+on+Saturday+Night+Live.+His+memorable+and%C2%A0panoramic+monologue%C2%A0was+the+comic+relief+the+country+needed+following+the+2016+Presidential+election+which+personified+our+nation%E2%80%99s+deep+racial+divide.%C2%A0He+capped+off+the+year+by+releasing+the+remaining+two+stand-up+specials%2C%C2%A0Equanimity%C2%A0and%C2%A0The+Bird+Revelations%2C%C2%A0on+New+Year%E2%80%99s+Eve.%C2%A0In+2018%2C+Chappelle+received%C2%A0Pollstar%E2%80+%28View+Full+Event+Description+Here%3A+https%3A%2F%2Fmodell-lyric.com%2Fevent%2Fdave-chappelle%2F%29&location=140+W.+Mt+Royal+Ave.%2C+Baltimore%2C+MD%2C+21201%2C+United+States&trp=false&sprop=website:https://modell-lyric.com&ctz=America%2FNew_York" style="color:#B60A16" target="_blank"><i>Add to Calendar</i></a></p>
+<div class="vl6"></div>
+    <h6>iCAL</h6>
+    <p class="address7"><a href=""style="color:#B60A16" target="_blank"><i>Add to iCal</i></a></p>
+  <div class="close">&#x2715;</div>
+</div>        
+    
+    
+
+<h1>Incredibly Basic Slider</h1>
+<div id="slider">
+  <a href="#" class="control_next">&#x203A;  </a>
+  <a href="#" class="control_prev"> &#x2039; </a>
+  <ul>
+    <li><div class="letspop"><img src="img/dave.jpg" width="100%" height="100%"></div></li>
+    <li><div class="letspop1"><img src="img/jill.jpg" width="100%" height="100%"></div></li>
+    <li><div class="letspop2"><img src="img/john.jpg" width="100%" height="100%"></div></li>
+    <li><div class="letspop3"><img src="img/david.jpg" width="100%" height="100%"></div></li>
+    <li><div class="letspop4"><img src="img/idol.jpg" width="100%" height="100%"></div></li>
+    <li><div class="letspop5"><img src="img/december.jpg" width="100%" height="100%"></div></li>
+    <li><div class="letspop6"><img src="img/celtic.jpg" width="100%" height="100%"></div></li>
+    <li><div class="letspop7"><img src="img/bill.jpg" width="100%" height="100%"></div></li>    
+  </ul>  
+      </div>
+    
+<div class="footer">
+  <p class="foot">Copyright © 2018 The Modell Lyric | All Rights Reserved | Privacy Policy | The Modell Lyric Foundation is funded in part by MSAC and The Citizens of Baltimore County</p>
+</div>
+    
+        
+
+      
+    
+    
+    
+
+    
+    <script>
+        jQuery(document).ready(function ($) {
+
+  $('#checkbox').change(function(){
+    setInterval(function () {
+        moveRight();
+    }, 3000);
+  });
+  
+	var slideCount = $('#slider ul li').length;
+	var slideWidth = $('#slider ul li').width();
+	var slideHeight = $('#slider ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#slider').css({ width: slideWidth, height: slideHeight });
+	
+	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+    $('#slider ul li:last-child').prependTo('#slider ul');
+
+    function moveLeft() {
+        $('#slider ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slider ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+});    
+
+  
+// The class you click to trigger the popup 
+$('.letpop').on('click', function() {
+  // The Overlay fades in
+  $(".lay").fadeIn(200, function() {});
+  // The Popup fades in just after
+  $(".pop").fadeIn(600, function() {});
+});
+
+// The class's you click when you want to close the pop
+$('.lay, .close').on('click', function() {
+  // The Overlay fades out slower
+  $(".lay").fadeOut(600, function() {});
+  // The Popup fades out faster
+  $(".pop").fadeOut(200, function() {});
+});       
+       
+        
+        
+        
+        
+// The class you click to trigger the popup 
+$('.letspop').on('click', function() {
+  // The Overlay fades in
+  $(".overlay").fadeIn(200, function() {});
+  // The Popup fades in just after
+  $(".popup").fadeIn(600, function() {});
+});
+
+// The class's you click when you want to close the pop
+$('.overlay, .close').on('click', function() {
+  // The Overlay fades out slower
+  $(".overlay").fadeOut(600, function() {});
+  // The Popup fades out faster
+  $(".popup").fadeOut(200, function() {});
+});
+        
+/* slide 1*/
+        
+$('.letspop1').on('click', function() {
+  // The Overlay fades in
+  $(".overlay1").fadeIn(200, function() {});
+  // The Popup fades in just after
+  $(".popup1").fadeIn(600, function() {});
+});
+
+// The class's you click when you want to close the pop
+$('.overlay1, .close').on('click', function() {
+  // The Overlay fades out slower
+  $(".overlay1").fadeOut(600, function() {});
+  // The Popup fades out faster
+  $(".popup1").fadeOut(200, function() {});
+});        
+        
+/* slide 2*/
+        
+$('.letspop2').on('click', function() {
+  // The Overlay fades in
+  $(".overlay2").fadeIn(200, function() {});
+  // The Popup fades in just after
+  $(".popup2").fadeIn(600, function() {});
+});
+
+// The class's you click when you want to close the pop
+$('.overlay2, .close').on('click', function() {
+  // The Overlay fades out slower
+  $(".overlay2").fadeOut(600, function() {});
+  // The Popup fades out faster
+  $(".popup2").fadeOut(200, function() {});
+});        
+                
+/* slide 3*/
+        
+$('.letspop3').on('click', function() {
+  // The Overlay fades in
+  $(".overlay3").fadeIn(200, function() {});
+  // The Popup fades in just after
+  $(".popup3").fadeIn(600, function() {});
+});
+
+// The class's you click when you want to close the pop
+$('.overlay3, .close').on('click', function() {
+  // The Overlay fades out slower
+  $(".overlay3").fadeOut(600, function() {});
+  // The Popup fades out faster
+  $(".popup3").fadeOut(200, function() {});
+});        
+/* slide 4*/
+        
+$('.letspop4').on('click', function() {
+  // The Overlay fades in
+  $(".overlay4").fadeIn(200, function() {});
+  // The Popup fades in just after
+  $(".popup4").fadeIn(600, function() {});
+});
+
+// The class's you click when you want to close the pop
+$('.overlay4, .close').on('click', function() {
+  // The Overlay fades out slower
+  $(".overlay4").fadeOut(600, function() {});
+  // The Popup fades out faster
+  $(".popup4").fadeOut(200, function() {});
+});        
+/* slide 5*/
+        
+$('.letspop5').on('click', function() {
+  // The Overlay fades in
+  $(".overlay5").fadeIn(200, function() {});
+  // The Popup fades in just after
+  $(".popup5").fadeIn(600, function() {});
+});
+
+// The class's you click when you want to close the pop
+$('.overlay5, .close').on('click', function() {
+  // The Overlay fades out slower
+  $(".overlay5").fadeOut(600, function() {});
+  // The Popup fades out faster
+  $(".popup5").fadeOut(200, function() {});
+});        
+/* slide 6*/
+        
+$('.letspop6').on('click', function() {
+  // The Overlay fades in
+  $(".overlay6").fadeIn(200, function() {});
+  // The Popup fades in just after
+  $(".popup6").fadeIn(600, function() {});
+});
+
+// The class's you click when you want to close the pop
+$('.overlay6, .close').on('click', function() {
+  // The Overlay fades out slower
+  $(".overlay6").fadeOut(600, function() {});
+  // The Popup fades out faster
+  $(".popup6").fadeOut(200, function() {});
+});        
+/* slide 7*/
+        
+$('.letspop7').on('click', function() {
+  // The Overlay fades in
+  $(".overlay7").fadeIn(200, function() {});
+  // The Popup fades in just after
+  $(".popup7").fadeIn(600, function() {});
+});
+
+// The class's you click when you want to close the pop
+$('.overlay7, .close').on('click', function() {
+  // The Overlay fades out slower
+  $(".overlay7").fadeOut(600, function() {});
+  // The Popup fades out faster
+  $(".popup7").fadeOut(200, function() {});
+});        
+        
+        
+/* subscribe */        
+// The class you click to trigger the popup 
+$('.letpop').on('click', function() {
+  // The Overlay fades in
+  $(".lay").fadeIn(200, function() {});
+  // The Popup fades in just after
+  $(".pop").fadeIn(600, function() {});
+});
+
+// The class's you click when you want to close the pop
+$('.lay, .close').on('click', function() {
+  // The Overlay fades out slower
+  $(".lay").fadeOut(600, function() {});
+  // The Popup fades out faster
+  $(".pop").fadeOut(200, function() {});
+});       
+                                                
+        
+    </script>
+
+</body>
+
+</html>
