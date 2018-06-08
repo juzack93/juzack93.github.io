@@ -1,0 +1,1296 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>COLOR 2018</title>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+    
+    <style>
+        header {
+            position: fixed;
+            top: 0; 
+            right: 50;
+            left: 50;
+            background-color: white;
+            width: 100%;
+            height: 100px;
+                overflow:hidden;
+            
+        }
+
+       html,body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/* resize body element and set scrollbar there */
+body {
+  position: absolute;
+  top: 110px;
+  bottom: 0;
+  width: 100%;
+  overflow: auto;
+    color:#414141;
+}
+
+/* and finally the header element above it all */
+body > h1:first-child {
+  position: fixed;
+    height:150%;
+  width: 100%;
+  padding: 0;
+}
+        
+        ul {
+            text-align: right;
+            list-style-type: none;
+            margin: -55px 50px 0 0px;
+        }
+
+        ul li {
+            display: inline;
+            padding: 10px;
+        }
+
+        ul li a {
+            color: #414141;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: .8em;
+            font-family: "opensans", sans-serif;
+            font-weight: 600;
+            transition: 0.1s;
+            letter-spacing: .5px;
+        }
+
+        ul li a:hover {
+            color: #B60A16;
+        }
+        
+      
+        
+        #container {
+            margin-top: 10px;
+            margin-left: 40px;
+            
+        }
+        
+        p {
+            display: inline;
+            position: absolute;
+            width: 300px;
+            color:#414141;
+            text-align: left;
+            font-size: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .address {
+            
+            margin-top: 30px;
+            font-size: 12px;
+            margin-left: 30px;
+            width: 400px;
+            margin-bottom: 0px;
+            display: inline;
+        }
+        
+      hr {
+            margin-top: 20px;
+            display: block;
+            position: relative; 
+            width: 98%;
+            border:1;
+        }
+
+
+
+/* slider */        
+        
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+    overflow: auto;
+    height:100%;
+    padding-bottom:25px;
+    
+}
+
+
+
+        
+        
+        
+        
+        
+        
+        
+        
+ 
+
+/* Lets Pop up */
+
+
+.overlay{
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+} 
+.popup{
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 50%; 
+  top: 5%;
+  z-index: 2;
+  background-color: #fff;
+  height: 370px;
+  width: 800px;
+  overflow: hidden;
+  padding: 40px;
+  transform: translate(-50%, 0);
+  margin-top: 80px;
+}
+
+
+/* Bored stuff & extras*/
+   
+
+        
+.close{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: block;
+  color: #666666;
+  font-family: sans-serif;
+}
+        
+.close:hover{
+  cursor: pointer;
+  color: #444444;
+}       
+        
+.vl {
+    margin-top:50px;
+    margin-left: 150px;
+    border-left: 1px solid #414141;
+    margin-bottom: 50px;
+    height: 300px;
+    top:0;  
+    bottom:50;
+    display: inline;
+}  
+        
+.vl2 {
+    margin-left: 45px;
+    border-left: 1px solid #414141;
+    margin-bottom: 50px;
+    height: 300px;
+    top:0;
+    bottom:50;
+    display: inline;
+}  
+        
+.vl3 {
+    margin-left: 150px;
+    border-left: 1px solid #414141;
+    margin-bottom: 50px;
+    height: 300px;
+    top:0;
+    bottom:50;
+display: inline;
+}        
+   
+.vl4 {
+    margin-left: 93px;
+    border-left: 1px solid #414141;
+    margin-bottom: 50px;
+    height: 300px;
+    top:0;
+    bottom:50;
+display: inline;
+}      
+        
+      
+.address2 {
+            font-size: 12px;
+            margin-top: 65px;
+            margin-left: -40px;
+            width: 100px;
+            margin-bottom: 0px;
+            display: inline-block;
+        }
+
+.address3 {
+            font-size: 12px;
+            margin-top: 145px;
+            margin-left: -97px;
+            width: 100px;
+            margin-bottom: 0px;
+    display: inline-block;
+        }
+        
+.address4 {
+            font-size: 12px;
+            margin-left: 583px;
+            width: 400px;
+            margin-bottom: 0px;
+    display: inline-block;
+        }        
+        
+.address5 {
+            font-size: 12px;
+            margin-left: -38px;
+            width: 100px;
+            margin-bottom: 0px;
+            margin-top: 63px;
+    display: inline-block;
+    font-style: italic;
+    color:#B60A16;
+        } 
+        
+.padding {
+            padding-top: 0px;
+            display: inline-block;
+        }
+
+  img {
+            display: inline-block;
+        }               
+
+.imginline
+        {
+            display: inline;
+        }
+
+        
+        
+        
+
+
+
+        
+#submit-form:hover {
+  background:#d43f3a;  
+}
+        
+label {
+  display:none;
+}
+        
+.form-container {
+  margin-bottom: 0;
+  margin-left:575px;
+  display: inline-block;
+  border-radius: 4px;
+
+}
+             
+form {
+  display:inline-block;
+    border-radius: 4px;
+}       
+        
+.width {
+            
+            width:280px;
+        }        
+        
+        a {
+            text-decoration: none;
+            color: #B60A16;
+            
+        }        
+        
+        a:hover {
+        text-decoration: underline;    
+        }
+
+
+        
+        
+        
+        
+
+        
+        
+        
+ @import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  margin-left: 0px;
+  padding: 4em;
+  width: 48em;
+}
+
+
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: darkgray;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #B60A16;
+}
+
+.accordion a:hover::after {
+  border: 1px solid #B60A16;
+}
+
+.accordion a.active {
+  color: #B60A16;
+  border-bottom: 1px solid #B60A16;
+}
+
+.accordion a::after {
+     font-family: "open-sans";
+  content: 	"+";
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: darkgray;;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid darkgray;
+  text-align: center;
+}
+
+.accordion a.active::after {
+    font-family: "open-sans";
+  content: "–";
+  color: #B60A16;
+  border: 1px solid #B60A16;
+}
+
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+  
+  font-weight: 300;
+
+}
+
+.accordion .content.active {
+    
+  opacity: 1;
+  padding-top: 20rem;
+  max-height: 100%;
+  -webkit-transition: all 0.75s ease 0.15s;
+  -o-transition: all 0.75s ease 0.15s;
+  transition: all 0.75s ease 0.15s;
+    
+}       
+        
+        
+        .accordion-item::after {
+            height:500px;
+            
+        }        
+        
+
+        
+       
+        
+        .containermargin {
+            overflow: auto;
+            margin-left: 40px;
+            height: 1250px;
+        }
+        
+/**
+ * Tabs
+ */
+.tabs {
+	display: flex;
+	flex-wrap: wrap; 
+}
+.tabs label {
+	order: 1; 
+	display: block;
+	padding: 1rem 1rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+  background: white;
+  font-weight: bold;
+    color: lightgray;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+  transition: background ease 0.2s;
+}
+
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: white;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    color:#B60A16;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+.tabs .tab {
+  order: 99; 
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  background: #fff;
+}
+        
+        
+/* driving */
+.driving {
+           margin-top: 0px;
+           font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    margin-left: 10px;
+        }        
+        
+        
+        
+.accordionp  {
+           margin-top: 30px;
+            margin-left: 10px;
+           font-size: 12px;
+    color: #B60A16;
+    font-family: "PT Serif";
+        }      
+        
+.accordionpp  {
+           width:600px;
+    margin-left: 10px;
+           margin-top: 50px;
+           font-size: 12px;
+     font-family: "PT Serif";
+        }
+        
+.accordionppp  {
+           width:600px;
+    margin-left: 10px;
+           margin-top: 100px;
+           font-size: 12px;
+           color: #B60A16;
+     font-family: "PT Serif";
+        }     
+        
+.accordionpppp  {
+           width:600px;
+                margin-left: 10px;
+           margin-top: 120px;
+            
+           font-size: 12px;
+     font-family: "PT Serif";
+        }
+        
+/* public transit */        
+.ab   {
+          margin-top: 270px;
+           font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;     
+    margin-left: 10px;
+        }
+        
+.abc   {
+           width:600px;
+    margin-left: 10px;
+           margin-top: 300px;
+           font-size: 12px;
+     font-family: "PT Serif";   
+              color: #B60A16;
+        }
+        
+.abcd   {
+           width:600px;
+    margin-left: 10px;
+           margin-top: 320px;
+           font-size: 12px;
+     font-family: "PT Serif";    
+        }
+        
+.abcde   {
+           width:600px;
+    margin-left: 10px;
+           margin-top: 400px;
+           font-size: 12px;
+     font-family: "PT Serif"; 
+     color: #B60A16;
+        }
+        
+.abcdef   {
+           width:600px;
+    margin-left: 10px;
+           margin-top: 420px;
+           font-size: 12px;
+     font-family: "PT Serif";    
+        }
+        
+/* security */
+.abcdefg   {
+          margin-top: 480px;
+    margin-left: 10px;
+           font-size: 12px;
+            letter-spacing:1px;
+    font-weight: bold;     
+        }
+
+.abcdefgh   {
+           width:600px;
+    
+            margin-left: 10px;
+           margin-top: 510px;
+           font-size: 12px; 
+          font-family: "PT Serif";    
+        }
+        
+.abcdefghi   {
+           width:600px;
+    margin-left: 10px;
+           margin-top: 590px;
+           font-size: 12px;
+     font-family: "PT Serif";
+    color: #B60A16;
+        }
+        
+.abcdefghij   {
+           width:600px;
+    margin-left: 10px;
+           margin-top: 610px;
+           font-size: 12px;
+     font-family: "PT Serif"; 
+        }
+.bookingtext {
+             width:600px;
+    margin-left: 10px;
+           margin-top: 0px;
+           font-size: 12px;
+     font-family: "PT Serif"; 
+    }
+        
+.bookingtextt {
+             width:600px;
+    margin-left: 10px;
+           margin-top: 40px;
+           font-size: 12px;
+     font-family: "PT Serif"; 
+    }        
+
+/* Staff */
+.staff   {
+          margin-top: 00px;
+    margin-left: 10px;
+           font-size: 12px;
+    font-family: "PT Serif";
+    color: #B60A16;
+        }
+
+.stafff   {
+           width:600px;
+    font-family: "PT Serif";
+            margin-left: 10px;
+           margin-top: 30px;
+           font-size: 12px; 
+        
+        }
+        
+.staffff   {
+           margin-top: 270px;
+    margin-left: 10px;
+           font-size: 12px;
+    font-family: "PT Serif";
+    color: #B60A16;
+        }
+        
+.stafffff  {
+           width:600px;
+    margin-left: 10px;
+           margin-top: 300px;
+           font-size: 12px;
+     font-family: "PT Serif"; 
+        }        
+        
+        
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}        
+        
+/* additional bar */        
+        
+.add1     {
+    width:400px;
+            margin-left: 345px;
+            margin-top: -55px;
+            font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    color:#B60A16;
+    opacity: 1;
+  animation: fadeIn 1.5s ease;
+    float:right;
+    position: absolute;
+    right: 40px;
+    
+        }   
+
+        
+.add2     {
+    width: 300px;
+            margin-left: 145px;
+            margin-top: -28px;
+            font-size: 12px;
+    font-family: "PT Serif"; 
+    opacity: 1;
+  animation: fadeIn 1.5s ease;
+    height:1450px;
+    float:right;
+    position: absolute;
+    right: 140px;
+    
+        }     
+
+        
+        
+        
+        .formcontain {
+            padding-left:420px;
+        }
+
+        .w3 {
+            padding-top:-500px;
+        }
+        
+        .p {
+            display: inline;
+            position: relative;
+            width: 112px;
+            color:#414141;
+            font-size: 12px;
+            float: right;
+            margin-right: 460px;
+            margin-left: 0px;
+            margin-top: -55px;
+            font-family: "PT-serif";
+            color: #B60A16;
+            border: 1px solid #B60A16;
+            border-radius: 4px;
+            padding: 4px 8px;
+            
+        }
+        .p:hover {
+            text-decoration: none;
+            background: #B60A16;
+            color: white;
+            transition: 0.3s;
+        }
+        
+        
+        
+        
+.letpop:hover{
+  cursor: pointer;
+}
+        
+    
+.pop{
+  display: none; /* Default Hidden */
+  position: fixed;
+  top: 55px;
+  left: 650px;
+  z-index: 2;
+  background-color: #fff;
+  height: 360px;
+  width: 800px;
+  overflow: hidden;
+  padding: 40px;
+  transform: translate(-50%, 0);
+  margin-top: 90px;
+    border-radius:5px;
+}        
+.lay{
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+}              
+        
+h10 {
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 16px;
+  display: inline-block;
+  letter-spacing: 1px;
+  color:#B60A16;
+  font-family: "Open Sans";
+  font-weight: bold;
+    display: inline-block;
+        }        
+        
+.info {
+        font-size: 12px;
+        color: #414141;
+        font-family: "PT Serif";
+        margin-top: 45px;
+        margin-left: -398px;
+        width: 730px;
+    }        
+
+.col-1 {
+    float: left;
+    width: 70%;
+    font-size: 12px;
+    margin-bottom:-30px;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: -50px;
+    font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}        
+        
+.col-2 {
+    float: left;
+    width: 85%;
+    font-size: 12px;
+    margin-bottom:-10px;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: -50px;
+    font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}             
+        
+.col-3 {
+    float: left;
+    width: 70%;
+    font-size: 12px;
+    margin-bottom:-30px;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: -50px;
+    font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}        
+        
+.col-4 {
+    float: left;
+    width: 85%;
+    font-size: 12px;
+    margin-bottom:-10px;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: -50px;
+    font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}        
+
+.margin {
+            margin-left: 50px;
+            margin-top: 50px;
+        }  
+        
+.submit {
+     padding-top: 160px;
+    margin-left: -50px;
+    display: inline-block;
+        }        
+        
+
+.submit:after {
+    content: "";
+   
+    margin-left:0px;
+    display: table;
+    clear: both;
+    width: 100px;
+    display: inline-block;
+}              
+
+* {
+    box-sizing: border-box;
+}
+input[type=text] {
+  width:12em;
+  background-color:#fff;
+  border: 0;
+  margin: 0.5em 0;
+  padding:0.1em 0.5em;
+  line-height:1.3em;
+  height:3em;
+  display:inline;
+  vertical-align:bottom;
+  color:lightgray;
+    
+}
+        
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: white;
+    color: #B60A16;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    border-radius: 4px;
+    border: 1px solid #B60A16;
+}
+
+input[type=submit]:hover {
+    background-color: #B60A16;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+}
+        
+        
+/* Footer */        
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:5.7%;
+   background-color: #B60A16;
+   margin:auto;
+   padding:15px 0 15px 0;    
+        }  
+
+.foot {
+    margin-left: 65px;
+    margin-top:-3px;
+    color: lightgray;
+    width: 773px;
+    font-size:10px;
+}  
+           
+body {
+    background-color:white;
+            background-image:url(bg1.jpg);
+            background-repeat:no-repeat;
+            background-position: center;
+    background-size: cover;
+    
+        }
+        html {
+            overflow: hidden;
+        }   
+.close{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: block;
+  color: #bababa;
+  font-family: sans-serif;
+  margin-right:5px;
+  font-size: 20px;
+    font-weight: lighter;
+
+}
+        
+.close:hover{
+  cursor: pointer;
+  color: #B60A16;
+    
+}             
+        
+    </style>
+    
+    
+</head>
+
+<body>
+    <header>
+        <div id="container">
+            <a href="index2.html"><img div class="imginline" src="img/logo.jpg" alt="Smiley face" width="100"></a>
+           <p class="address">
+        140 W Mt Royal Ave, Baltimore, MD 21201 / (410) 685-5086
+        </p> 
+            <div class="letpop"><p class="p"> <i>Subscribe by Email</i></p></div>
+      
+        <ul>
+            <li data-menuanchor="Home" ><a href="index2.html">TICKETS</a></li>
+            <li data-menuanchor="General Info" ><a href="GeneralInfo.html" style="color:#B60A16">GENERAL INFO</a></li>
+            <li data-menuanchor="Membership"><a href="Membership.html" >MEMEBERSHIP</a></li>
+            <li data-menuanchor="Contact" ><a href="Contact.html" >CONTACT</a></li>
+        </ul>
+        
+        </div>
+        <hr align="center">
+    </header>
+    
+    
+    
+    
+    
+    
+<!-- Subscribe Pop Up -->
+    
+<div class="lay"></div>
+<!-- Popup -->
+<div class="pop" >
+    
+<h10>Join Our Email List & Get The Latest Info</h10>
+    <p class="info">We’ll keep you informed electronically of what great acts are coming to The Lyric. Enter your email address below to receive our Upcoming Events list in your email box on a regular basis. Your information will be kept confidential and will not be sold to advertisers.</p>
+    
+    <div class="margin">
+      <div class="col-1">
+        <label for="fname" >Name</label>
+      </div>
+      <div class="col-2">
+        <input type="text" id="fname" name="firstname" placeholder="full name">
+      </div>
+        <div class="col-3">
+        <label for="fname" >Email</label>
+      </div>
+    <div class="col-4">
+        <input type="text" id="fname" name="firstname" placeholder="email address">
+      </div>
+        <div class="submit">
+      <input type="submit" value="Subscribe">
+    </div>
+          <div class="close">&#x2715;</div>
+
+ </div>
+    
+</div>
+    
+    
+    
+     <div class="containermargin">
+<div class="tabs">
+  <input type="radio" name="tabs" id="tabone" checked="checked">
+  <label for="tabone">DIRECTION / GENERAL INFO</label>
+  <div class="tab">
+    <p class="driving">DRIVING</p>
+      <p class="add1">PARKING</p>
+      <p class="add2">A limited number of parking spaces are available along Mount Royal Avenue (including several handicapped accessible locations) and other nearby streets.  Please carefully check the associated signage for information about time and availability.<br><br>
+
+All parking garages are privately owned. The Lyric’s official garage is Fitzgerald Garage on Oliver Street (between Mt. Royal Avenue and Maryland Avenue at 80 West Oliver Street  Baltimore  21201).  The Garage is a block north of The Lyric.<br><br>
+
+Parking for some events is also available at the Cathedral Street Garage (located a block south of the theatre). The Symphony Center Garage, adjacent to Park Avenue (about two blocks south of the theatre) is another nearby garage.<br>
+Parking garage prices vary and are determined by the individual parking lot operator.</p>
+    <p class="accordionp">From the North and Northwest:</p>
+    <p class="accordionpp">Take 1 – 83 South (Jones Falls Expressway) to Exit 5, Maryland Avenue. Go straight through the traffic light to the second street (Mount Royal Avenue).</p>
+ 
+    <p class="accordionppp">From Washington:</p>
+      <p class="accordionpppp">Via Interstate 95 – north to Baltimore: As you approach downtown, you will see I – 395. Take I – 395 toward the Inner Harbor/Downtown. Stay on your left. The second traffic light will be Pratt Street. Make a right on to Pratt. Take Pratt to Charles Street and make a left. Follow Charles about 20 blocks until Mount Royal Avenue. Make a left on to Mount Royal and the Lyric is one block down on your right.<br> <br> Via 295 Baltimore Washington Parkway: As you approach downtown, you will see I – 395. Take I – 395 toward the Inner Harbor/Downtown. Stay on your left. The second traffic light will be Pratt Street. Make a right on to Pratt. Take Pratt to Charles Street and make a left. Follow Charles about 20 blocks until Mount Royal Avenue. Make a left on to Mount Royal and the Lyric is one block down on your right.</p>
+    <p class="ab">PUBLIC TRANSIT</p>
+    <p class="abc">The University of Baltimore/Mount Royal Light Rail Station</p>
+    <p class="abcd">Located almost directly across from the Lyric Opera House. On weekdays and Saturdays, trains run from 4:45 AM until 11:45 PM north to Hunt Valley. Trains run south to Glen Burnie, weekdays and Saturdays, from 4:24 AM until 11:40 PM. Sundays, trains run both north and south between 11 AM and 7:25 PM. For more information, please contact the Mass Transit Administration at 410-539-5000.</p>
+    <p class="abcde">Baltimore’s Penn Station</p>
+    <p class="abcdef">Two blocks northeast of the Lyric. Daily service between Washington’s Union Station and Baltimore on both MARC and AMTRAK is available from early morning until 11:30 PM. For more information, please call 1-800-USA-RAIL.</p>
+   <p class="abcdefg">SECURITY</p>
+    <p class="abcdefgh">In an effort to keep our patrons safe during our performances we’ve added extra security at our doors, please arrive early to allow plenty of time to find your seats. The doors to the lobby open 90 minutes prior to each event unless otherwise noted.
+
+Please follow the link provided below to see a complete list of prohibited items to make entry to the venue as quick as possible to fully enjoy all the Modell Lyric has to offer before each show!</p>
+    <p class="abcdefghi">Prohibited Items:</p>
+    <p class="abcdefghij">1-  No Backpacks (Unless being used as a diaper bag but must be searched.
+
+2- No Weapons of Any Kind:  Knives, Guns, Tasers, Pepper Spray, Mace, Batons etc.<br><br>
+
+Armed Law enforcement must report to security at the doors to sign in.
+3- No outside food or drink<br><br>
+
+4- No illegal drugs<br><br>
+
+5- No laser pointers<br><br>
+
+6- No professional cameras (any cameras with detachable lens or digital cameras that extends more than 3”<br><br>
+
+7- No I Pads or tablets<br><br>
+
+8- No audio or video equipment or tripods<br><br>
+
+9- No selfie sticks, go pro’s, sticks or poles<br><br>
+
+10- No balloons<br><br>
+
+11- No pets – Certified Service Animals<br><br>
+
+12- No Drones<br><br>
+
+**Note: The Lyric Will Not check or store above items.</p> 
+    
+     </div>
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  <input type="radio" name="tabs" id="tabtwo">
+  <label for="tabtwo">TICKETS</label>
+  <div class="tab">
+    <p class="driving">HOW CAN I PURCHASE TICKETS?</p>
+      <p class="add1">BRING A GROUP AND SAVE!</p>
+      <p class="add2">Book Club? Opera Club? Dance Club? Girl’s Night?<br>
+Work Outings? School or Religious Groups?<br>
+Experience The Modell Lyric with 15, 20 or 50 of your friends, companions or clients and save. Groups receive discounts on select performances, personalized service, deferred payment options and reduced handling charges.<br><br>
+
+Contact Karen Gray at 410-900-1165 or kareng@lyricoperahouse.com for more information about bringing your next group to The Lyric.</p>
+    <p class="accordionp">There are several ways to purchase:</p>
+    <p class="accordionpp">At The Modell Lyric Box Office
+140 West Mount Royal Avenue<br>
+Baltimore, MD 21201<br>
+Monday– Friday, 10 am – 4 pm<br><br>
+
+Tickets can be purchased online: <i><a href="https://www.ticketmaster.com/Modell-Performing-Arts-Center-at-the-tickets-Baltimore/venue/172089" color="B60A16" target="_blank">Click here.</a></i><br><br>
+
+Calling 410-547-SEAT<br><br>
+
+Visiting The Modell Lyric box office Monday-Friday 10:00am–4:00pm.<br><br>
+
+*ADA/Accessible Seating is available on a first come/first serve basis at The Modell Lyric. Upon request and with 3 weeks notice, The Modell Lyric offers Sign Language Interpretation. To set up either of these options, please call 410–900–1150.</p>
+ 
+      
+  </div>
+  
+    
+    
+    
+    
+    
+  <input type="radio" name="tabs" id="tabthree">
+  <label for="tabthree">BOOKING</label>
+  <div class="tab">
+      
+    <p class="add1">TOUR THE LYRIC</p>
+      <p class="add2">Interested in learning more about the historic Lyric –Maryland’s premiere historical, architectural, and cultural performing arts venue. Join us for a complimentary guided tour of The Lyric. This is your opportunity to get an exclusive, behind-the-scenes tour from the stage-house to the box office, from the rehearsal hall to the dressing rooms. Did you know a ballroom dance floor used for events such as the Bachelor’s Cotillion remains beneath the orchestra seating; or where was that scene from House of Cards filmed (that’s right, The Lyric was a part of the hit TV show) – well to answer those questions and to discover more, join us on a tour.
+Tour capacity is 50 participants (determined on a first come, first served basis). Schools are welcome.
+Call Brian Hare 410-900-1156 to reserve your date.</p>
+    <p class="bookingtext">The 2,564 seat auditorium is available to rent for performances, benefit concerts, recitals, corporate meetings, civic gatherings, and community programs.</p>
+      <p class="bookingtextt"> <a href="https://modell-lyric.com/wp-content/uploads/2016/02/Tech-Package-Information.pdf" color="B60A16" target="_blank"><i>Tech Package Information</i></a></p>
+      
+  </div>
+    
+    
+    
+    <input type="radio" name="tabs" id="tabfour">
+  <label for="tabfour">STAFF / TRUSTEE</label>
+  <div class="tab">
+    <p class="staff">Staff List</p>
+      <p class="add1">HOURS</p>
+      <p class="add2">Monday-Friday | 10 am – 4 pm</p>
+    <p class="stafff">
+Executive Director | Jonathan Schwartz<br>
+Marketing & PR Director | Nicoletta Macris<br>
+Booking Director | Chris Heacock<br>
+Production Manager | Jamie Bell<br>
+Director of Education | Denise Kumani Gantt<br>
+Technical Director | George Tivvis<br>
+Director of Ticketing | Karen Gray<br>
+Operations Manager | Brian Hare<br>
+Social Media Manager | Cathryn Dunn<br>
+Programming Assistant | Ashley Hart<br>
+Accounting Associate | Dan Nowicki<br>
+Operations Assistant | Moe Jones<br>
+Box Office Representative | Abbe Klair<br>
+Box Office Representative | Jason Carrick<br>
+Education Manager | Ron Williams </p>
+      <p class="staffff">Lyric Foundation, Board of Trustees
+</p>
+    <p class="stafffff">
+CHAIRMAN | Cleaveland D. Miller<br>
+CO-VICE CHAIRMAN | Dr. H. Mebane Turner<br>
+CO-VICE CHAIRMAN | John H. Denick<br>
+SECRETARY | Judith Waranch<br>
+TREASURER | Stephen D. Palmer<br>
+BOARD MEMBERS | <br>
+George Tivvis<br>
+Allison Parker Abromitis<br>
+Anirban Basu<br>
+Sandra Berman<br>
+Jacqueline Brooks<br>
+Bryant Cargile<br>
+Mike Croxson<br>
+Richard Davison<br>
+Miriam Fuchs<br>
+Helena Light Hadley<br>
+Dr. Jesse Harris<br>
+Mark Hellstern<br>
+Rick Hyman<br>
+Dr. Allan D. Jensen<br>
+Dr. Brenda Bowe Johnson<br>
+Tyrone Keyes<br>
+Gary Lenz<br>
+Julie Mercer<br>
+Susan Mitcheltree<br>
+Lourdes Morales<br>
+Jeffrey Penza<br>
+Michael Phillips<br>
+Mark J. Ring<br>
+David S. Rosen<br>
+The Honorable Kurt L. Schmoke<br>
+Howard Sobkov<br>
+Dr. William Smulyan<br>
+Howard M. Weiss<br>
+David Witherspoon</p>
+  </div>
+</div>
+    
+</div>
+      
+    
+    
+ <div class="footer">
+  <p class="foot">Copyright © 2018 The Modell Lyric | All Rights Reserved | Privacy Policy | The Modell Lyric Foundation is funded in part by MSAC and The Citizens of Baltimore County</p>
+</div>   
+
+    
+    <script>
+      
+// The class you click to trigger the popup 
+$('.letpop').on('click', function() {
+  // The Overlay fades in
+  $(".lay").fadeIn(200, function() {});
+  // The Popup fades in just after
+  $(".pop").fadeIn(600, function() {});
+});
+
+// The class's you click when you want to close the pop
+$('.lay, .close').on('click', function() {
+  // The Overlay fades out slower
+  $(".lay").fadeOut(600, function() {});
+  // The Popup fades out faster
+  $(".pop").fadeOut(200, function() {});
+});       
+        
+ 
+</script>        
+        
+        
+        
+        
+        
+
+</body>
+
+</html>

@@ -1,0 +1,1491 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>COLOR 2018</title>
+    <meta charset="UTF-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cooper-hewitt" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+    
+    <style>
+        header {
+            position: fixed;
+            top: 0; 
+            right: 50;
+            left: 50;
+            background-color: white;
+            width: 100%;
+            height: 100px;
+                overflow:hidden;
+            
+        }
+
+       html,body {
+  margin: 0;
+  padding: 0;
+}
+
+/* remove default scrollbar,
+   browser support: IE8+, Firefox, Chrome, Opera, Safari 5.1.4 */
+html {
+  overflow: hidden;
+}
+
+/* resize body element and set scrollbar there */
+body {
+  position: absolute;
+  top: 110px;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+    color:#414141;
+}
+
+/* and finally the header element above it all */
+body > h1:first-child {
+  position: fixed;
+    height:150%;
+  width: 100%;
+  padding: 0;
+}
+        
+        ul {
+            text-align: right;
+            list-style-type: none;
+            margin: -55px 50px 0 0px;
+        }
+
+        ul li {
+            display: inline;
+            padding: 10px;
+        }
+
+        ul li a {
+            color: #414141;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: .8em;
+            font-family: "open sans", sans-serif;
+            font-weight: 600;
+            transition: 0.1s;
+            letter-spacing: .5px;
+        }
+
+        ul li a:hover {
+            color: #B60A16;
+        }
+        
+      
+        
+        #container {
+            margin-top: 10px;
+           
+            margin-left: 40px;
+            
+        }
+        
+        p {
+            display: inline;
+            position: absolute;
+            width: 300px;
+            color:#414141;
+            text-align: left;
+            font-size: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .address {
+            
+            margin-top: 30px;
+            font-size: 12px;
+            margin-left: 30px;
+            width: 400px;
+            margin-bottom: 0px;
+            display: inline;
+        }
+        
+    hr {
+            margin-top: 20px;
+            display: block;
+            position: relative; 
+            width: 98%;
+            border:1;
+        }
+
+
+
+/* slider */        
+        
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+    overflow: auto;
+    height:100%;
+    padding-bottom:25px;
+    
+}
+        
+        html {
+            overflow: hidden;
+        }        
+
+.scroll {
+    overflow: auto;
+    height: 100%;
+    padding: 0;
+    margin-left: 37px;
+}
+
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 80px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 1150px;
+  height: 450px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+.slider_option {
+  position: relative;
+  margin: 10px auto;
+  width: 160px;
+  font-size: 18px;
+}
+        
+        
+        
+        
+        
+        
+        
+        
+ 
+
+/* Lets Pop up */
+
+.letspop:hover{
+  cursor: pointer;
+}
+.overlay{
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+} 
+.popup{
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 50%; 
+  top: 5%;
+  z-index: 2;
+  background-color: #fff;
+  height: 370px;
+  width: 800px;
+  overflow: hidden;
+  padding: 40px;
+  transform: translate(-50%, 0);
+  margin-top: 80px;
+}
+
+
+/* Bored stuff & extras*/
+   
+
+        
+.close{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: block;
+  color: #666666;
+  font-family: sans-serif;
+}
+        
+.close:hover{
+  cursor: pointer;
+  color: #444444;
+}       
+        
+.vl {
+    margin-top:50px;
+    margin-left: 150px;
+    border-left: 1px solid #414141;
+    margin-bottom: 50px;
+    height: 300px;
+    top:0;  
+    bottom:50;
+    display: inline;
+}  
+        
+.vl2 {
+    margin-left: 45px;
+    border-left: 1px solid #414141;
+    margin-bottom: 50px;
+    height: 300px;
+    top:0;
+    bottom:50;
+    display: inline;
+}  
+        
+.vl3 {
+    margin-left: 150px;
+    border-left: 1px solid #414141;
+    margin-bottom: 50px;
+    height: 300px;
+    top:0;
+    bottom:50;
+display: inline;
+}        
+   
+.vl4 {
+    margin-left: 93px;
+    border-left: 1px solid #414141;
+    margin-bottom: 50px;
+    height: 300px;
+    top:0;
+    bottom:50;
+display: inline;
+}      
+        
+      
+.address2 {
+            font-size: 12px;
+            margin-top: 65px;
+            margin-left: -40px;
+            width: 100px;
+            margin-bottom: 0px;
+            display: inline-block;
+        }
+
+.address3 {
+            font-size: 12px;
+            margin-top: 145px;
+            margin-left: -97px;
+            width: 100px;
+            margin-bottom: 0px;
+    display: inline-block;
+        }
+        
+.address4 {
+            font-size: 12px;
+            margin-left: 583px;
+            width: 400px;
+            margin-bottom: 0px;
+    display: inline-block;
+        }        
+        
+.address5 {
+            font-size: 12px;
+            margin-left: -38px;
+            width: 100px;
+            margin-bottom: 0px;
+            margin-top: 63px;
+    display: inline-block;
+    font-style: italic;
+    color:#B60A16;
+        } 
+        
+.padding {
+            padding-top: 0px;
+            display: inline-block;
+        }
+    
+
+.imginline
+        {
+            display: inline;
+        }
+
+        
+        
+        
+
+
+textarea {
+  margin: 0.5em 0;
+  width:12em;
+  background-color:#fff;
+  border: 0;
+  padding:0.1em 0.5em;
+  line-height:1.3em;
+  height:10em;
+  display:inline;
+  vertical-align:bottom;
+  color:#111;
+  box-shadow:4px 4px 0px rgba(0,0,0,.1);
+}
+
+        
+#submit-form:hover {
+  background:#d43f3a;  
+}
+        
+label {
+  display:none;
+}
+        
+.form-container {
+    
+  margin-bottom: 0;
+  margin-left:575px;
+  border-radius: 4px;
+
+}
+             
+form {
+    text-overflow: ellipsis;
+    border-radius: 4px;
+    vertical-align: bottom;
+    
+}       
+        
+.width {
+            
+            width:280px;
+        }        
+        
+        a {
+            text-decoration: none;
+            color: #B60A16;
+            
+        }        
+        
+        a:hover {
+        text-decoration: underline;    
+        }
+
+
+        
+        
+        
+        
+
+        
+        
+        
+ @import url('https://fonts.googleapis.com/css?family=Hind:300,400');
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+
+
+
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: darkgray;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #B60A16;
+}
+
+.accordion a:hover::after {
+  border: 1px solid #B60A16;
+}
+
+.accordion a.active {
+  color: #B60A16;
+  border-bottom: 1px solid #B60A16;
+}
+
+.accordion a::after {
+     font-family: "open sans";
+  content: 	"+";
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: darkgray;;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid darkgray;
+  text-align: center;
+}
+
+.accordion a.active::after {
+    font-family: "open sans";
+  content: "–";
+  color: #B60A16;
+  border: 1px solid #B60A16;
+}
+
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+  
+  font-weight: 300;
+
+}
+
+.accordion .content.active {
+    
+  opacity: 1;
+  padding-top: 20rem;
+  max-height: 100%;
+  -webkit-transition: all 0.75s ease 0.15s;
+  -o-transition: all 0.75s ease 0.15s;
+  transition: all 0.75s ease 0.15s;
+    
+}       
+        
+        
+        .accordion-item::after {
+            height:500px;
+        }        
+
+        .containermargin {
+            overflow: auto;
+            margin-left: 40px;
+            height: 1200px;
+        }
+        
+/**
+ * Tabs
+ */
+.tabs {
+	display: flex;
+	flex-wrap: wrap; 
+}
+.tabs label {
+	order: 1; 
+	display: block;
+	padding: 1rem 1rem;
+	margin-right: 0.2rem;
+	cursor: pointer;
+  background: white;
+  font-weight: bold;
+    color: lightgray;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+  transition: background ease 0.2s;
+}
+
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+	background: white;
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    color:#B60A16;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
+}
+.tabs .tab {
+  order: 99; 
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+  background: #fff;
+}
+        
+        
+/* driving */
+.driving {
+           margin-top: 0px;
+           font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    margin-left: 10px;
+        }        
+        
+        
+        
+.accordionp  {
+           margin-top: 30px;
+            margin-left: 10px;
+           font-size: 12px;
+    color: #B60A16;
+    font-family: "PT Serif";
+        }      
+        
+.accordionpp  {
+           width:600px;
+    margin-left: 10px;
+           margin-top: 50px;
+           font-size: 12px;
+     font-family: "PT Serif";
+        }
+        
+.accordionppp  {
+           width:600px;
+    margin-left: 10px;
+           margin-top: 100px;
+           font-size: 12px;
+           color: #B60A16;
+     font-family: "PT Serif";
+        }     
+        
+.accordionpppp  {
+           width:600px;
+                margin-left: 10px;
+           margin-top: 120px;
+            
+           font-size: 12px;
+     font-family: "PT Serif";
+        }
+
+/* membership */        
+h1{
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 16px;
+display: inline-block;
+    margin-left: 57px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    color:#B60A16;
+    
+        
+        }
+       
+        .mefirst {
+            overflow: hidden;
+            margin-top:70px;
+            margin-left:-100px;
+            display: inline-block;
+        }        
+
+        .img {
+            margin-top:70px;
+            display: inline-block;
+            opacity: 0.3;
+        } 
+        .img2 {
+            margin-top:200px;
+            margin-left:-755px;
+            display: inline-block;
+            opacity: 0.3;
+        } 
+        
+        .img3 {
+            margin-top:200px;
+            display: inline-block;
+            opacity: 0.3;
+        } 
+        
+        .img4 {
+            margin-top:200px;
+            display: inline-block;
+            opacity: 0.3;
+        } 
+        
+        .img5 {
+            margin-top:330px;
+            margin-left:-755px;
+            display: inline-block;
+            opacity: 0.3;
+        } 
+        
+        .img6 {
+            margin-top:330px;
+            display: inline-block;
+            opacity: 0.3;
+            height:50px;
+        } 
+   
+@keyframes fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}       
+        
+.add1     {
+    width:400px;
+            margin-left: 345px;
+            margin-top: 18px;
+            font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    color:#B60A16;
+    opacity: 1;
+  animation: fadeIn 1.5s ease;
+    float:right;
+    position: absolute;
+    right: 40px;
+    
+        }   
+
+        
+.add2     {
+    width: 300px;
+            margin-left: 145px;
+            margin-top: 45px;
+            font-size: 12px;
+    font-family: "PT Serif"; 
+    opacity: 1;
+  animation: fadeIn 1.5s ease;
+    height:1450px;
+    float:right;
+    position: absolute;
+    right: 140px;
+    
+        }         
+
+
+
+        
+        
+
+
+   .contain {
+       height:500px;
+        margin-top:600px;
+        margin-left: -470px;
+       
+       
+    }
+
+
+
+* {
+    box-sizing: border-box;
+}
+input[type=text] {
+  width:12em;
+  background-color:#fff;
+  border: 0;
+  margin: 0.5em 0;
+  padding:0.1em 0.5em;
+  line-height:1.3em;
+  height:3em;
+  display:inline;
+  vertical-align:bottom;
+  color:lightgray;
+    
+}
+        
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    margin-top:2px;
+    background-color: white;
+    color: #B60A16;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    border-radius: 4px;
+    border: 1px solid #B60A16;
+}
+
+input[type=submit]:hover {
+    background-color: #B60A16;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+}
+
+.col-25 {
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    margin-bottom:-10px;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: -50px;
+    font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}
+        
+.col-35 {
+    float: left;
+    width: 100%;
+    font-size: 12px;
+    display: inline-block;
+    margin-left: -50px;
+    font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}
+
+        
+.col-55 {
+    float: left;
+    width: 38%;
+    display: inline-block;
+    margin-left: -50px;
+}
+        
+
+.col-75 {
+    float: left;
+    width: 21.5%;
+    display: inline-block;
+    margin-left: -50px;
+    padding-right 50px;
+}
+        
+
+        
+.col-85 {
+    float: left;
+    width: 30%;
+    padding-right: 70px;
+    margin-left: -50px;
+} 
+        
+.col-105 {
+    float: left;
+    width: 30%;
+    padding-right: 70px;
+    margin-left: -462px;
+    margin-top: 50px;
+}
+.col-115 {
+    float: left;
+    width: 12%;
+    display: inline-block;
+    margin-left: -214px;
+    padding-right 50px;
+    margin-top: 50px;
+}
+        
+.col-125 {
+    float: left;
+    width: 30%;
+    padding-right: 70px;
+    margin-left: -50px;
+}      
+        
+.col-135 {
+    float: left;
+    width: 10%;
+    display: inline-block;
+    margin-left: -50px;
+}
+        
+.col-1351 {
+    float: left;
+    width: 10%;
+    display: inline-block;
+    margin-left: 20px;
+}
+        
+.col-145 {
+    float: left;
+    width: 15%;
+    margin-top:50px;
+    display: inline-block;
+    margin-left: -467px;
+} 
+
+.col-155 {
+    float: left;
+    width: 30%;
+    margin-top:50px;
+    display: inline-block;
+    margin-left: -298px;
+   
+}        
+
+.col-65 {
+    float: left;
+    width: 45%;
+    padding-right: 80px;
+    display: inline-block;
+    margin-left: -50px;
+}  
+        
+.col-95 {
+    float: left;
+    width: 40%;
+    padding-right: 00px;
+    display: inline-block;
+    margin-left: -50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    width: 500px;
+    display: inline-block;
+}
+
+        
+        
+.Becomeamember { text-align: left;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 16px;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin-top: -50px;
+  color:#B60A16;
+  font-family: "Open Sans";
+  font-weight: bold;
+    margin-left: -52px;
+    position:absolute;
+    
+        }        
+        
+.good {
+        width:500px;
+        margin-top: -11px;
+        margin-left: -50px;
+        font-size: 12px;
+        color: #414141;
+        font-family: "PT Serif"
+    }
+
+.row1 {
+    margin-top: 490px;
+    margin-left: -367px;
+    display: inline-block;
+        }        
+        
+
+.row1:after {
+    content: "";
+    margin-left:-500px;
+    display: table;
+    clear: both;
+    width: 100px;
+    display: inline-block;
+}  
+        
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+    }
+
+        }
+ 
+        .formcontain {
+            padding-left:420px;
+        }
+
+        .w3 {
+            padding-top:-500px;
+        }
+        
+        .p {
+            display: inline;
+            position: relative;
+            width: 112px;
+            color:#414141;
+            font-size: 12px;
+            float: right;
+            margin-right: 460px;
+            margin-left: 0px;
+            margin-top: -55px;
+            font-family: "PT-serif";
+            color: #B60A16;
+            border: 1px solid #B60A16;
+            border-radius: 4px;
+            padding: 4px 8px;
+            
+        }
+        .p:hover {
+            text-decoration: none;
+            background: #B60A16;
+            color: white;
+            transition: 0.3s;
+        }
+        
+        
+        
+        
+.letpop:hover{
+  cursor: pointer;
+}
+        
+    
+.pop{
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 50%; 
+  top: 8%;
+  z-index: 2;
+  background-color: #fff;
+  height: 360px;
+  width: 800px;
+  overflow: hidden;
+  padding: 40px;
+  transform: translate(-50%, 0);
+  margin-top: 90px;
+    border-radius:5px;
+}        
+.lay{
+  display: none; /* Default Hidden */
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+}              
+        
+h10 {
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: 16px;
+  display: inline-block;
+  letter-spacing: 1px;
+  color:#B60A16;
+  font-family: "Open Sans";
+  font-weight: bold;
+    display: inline-block;
+        }        
+        
+.info {
+        font-size: 12px;
+        color: #414141;
+        font-family: "PT Serif";
+        margin-top: 45px;
+        margin-left: -398px;
+        width: 730px;
+    }        
+
+.col-1 {
+    float: left;
+    width: 70%;
+    font-size: 12px;
+    margin-bottom:-30px;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: -50px;
+    font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}        
+        
+.col-2 {
+    float: left;
+    width: 85%;
+    font-size: 12px;
+    margin-bottom:-10px;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: -50px;
+    font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}             
+        
+.col-3 {
+    float: left;
+    width: 70%;
+    font-size: 12px;
+    margin-bottom:-30px;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: -50px;
+    font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}        
+        
+.col-4 {
+    float: left;
+    width: 85%;
+    font-size: 12px;
+    margin-bottom:-10px;
+    padding-top: 25px;
+    display: inline-block;
+    margin-left: -50px;
+    font-size: 12px;
+            letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #414141;
+}        
+
+.margin {
+            margin-left: 50px;
+            margin-top: 50px;
+        }  
+.submit {
+     padding-top: 140px;
+    margin-left: -50px;
+    display: inline-block;
+        }        
+        
+
+.submit:after {
+    content: "";
+   
+    margin-left:0px;
+    display: table;
+    clear: both;
+    width: 100px;
+    display: inline-block;
+}    
+
+        
+/* Footer */        
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:5.7%;
+   background-color: #B60A16;
+   margin:auto;
+   padding:15px 0 15px 0;    
+        }  
+
+.foot {
+    margin-left: 65px;
+    margin-top:-3px;
+    color: lightgray;
+    width: 773px;
+    font-size:10px;
+}      
+        
+body {
+    background-color:white;
+            background-image:url(bg2.jpg);
+            background-repeat:no-repeat;
+            background-position: center;
+    height:100%x;
+    background-size: cover;
+    
+        }  
+  html {
+            overflow: hidden;
+        }  
+        
+.close{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: block;
+  color: #bababa;
+  font-family: sans-serif;
+  margin-right:5px;
+  font-size: 20px;
+    font-weight: lighter;
+
+}
+        
+.close:hover{
+  cursor: pointer;
+  color: #B60A16;
+    
+}
+        
+input[type=subscribe] {
+    margin-top:18px;
+    background-color: white;
+    color: #B60A16;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    float: right;
+    border-radius: 4px;
+    border: 1px solid #B60A16;
+}
+
+input[type=subscribe]:hover {
+    background-color: #B60A16;
+    border-radius: 4px;
+    border: 1px solid white;
+    color: white;
+}        
+    </style>
+    
+    
+</head>
+
+<body>
+    <header>
+        <div id="container">
+            <a href="index2.html"><img div class="imginline" src="img/logo.jpg" alt="Smiley face" width="100"></a>
+           <p class="address">
+        140 W Mt Royal Ave, Baltimore, MD 21201 / (410) 685-5086
+        </p> 
+            <div class="letpop"><p class="p"> <i>Subscribe by Email</i></p></div>
+      
+        <ul>
+            <li data-menuanchor="Home" ><a href="index2.html">TICKETS</a></li>
+            <li data-menuanchor="General Info"><a href="GeneralInfo.html" >GENERAL INFO</a></li>
+            <li data-menuanchor="Membership"><a href="Membership.html" style="color:#B60A16">MEMEBERSHIP</a></li>
+            <li data-menuanchor="Contact" ><a href="Contact.html" >CONTACT</a></li>
+        </ul>
+        
+        </div>
+        <hr align="center">
+    </header>
+    
+    
+    
+    
+    
+    
+<!-- Subscribe Pop Up -->
+    
+<div class="lay"></div>
+<!-- Popup -->
+<div class="pop">
+<h10>Join Our Email List & Get The Latest Info</h10>
+    <p class="info">We’ll keep you informed electronically of what great acts are coming to The Lyric. Enter your email address below to receive our Upcoming Events list in your email box on a regular basis. Your information will be kept confidential and will not be sold to advertisers.</p>
+    
+    <div class="margin">
+      <div class="col-1">
+        <label for="fname" >Name</label>
+      </div>
+      <div class="col-2">
+        <input type="text" id="fname" name="firstname" placeholder="full name">
+      </div>
+        <div class="col-3">
+        <label for="fname" >Email</label>
+      </div>
+    <div class="col-4">
+        <input type="text" id="fname" name="firstname" placeholder="email address">
+      </div>
+        <div class="submit">
+      <input type="subscribe" value="Subscribe">
+    </div>
+          <div class="close">&#x2715;</div>
+
+ </div>
+    
+</div>
+    
+    
+<h1>Membership</h1> 
+    <div class="mefirst"><a href="Membership.html">
+<img src="img/mefirst.png" width="70%"></a>
+    </div>  
+     <div class="img"><a href="fan.html">
+<img src="img/fan.png" width="70%"></a>    
+    </div> 
+    <div class="img"><a href="understudy.html">
+<img src="img/understudy.png" width="70%"></a>    
+    </div> 
+    <div class="img2"><a href="performer.html">
+<img src="img/performer.png" width="70%"></a>    
+    </div> 
+    <div class="img3"><a href="allstar.html">
+<img src="img/allstar.png" width="70%"></a>    
+    </div> 
+    <div class="img4"><a href="producer.html">
+<img src="img/producer.png" width="70%"></a>    
+    </div> 
+    
+ <div class="img5"><a href="circle.html">
+<img src="img/circle.png" width="70%"></a>    
+    </div> 
+    <div class="img6"><a href="circleelite.html">
+<img src="img/circleelite.png" width="70%"></a>    
+    </div> 
+    
+    <div class="right">
+<p class="add1">‘ME FIRST!’ / $65 – 149</p>
+      <p class="add2">Email priority buying opportunity, as shows are announced. Secure your preferred seating online, ahead of the general public, with your secret code- the moment they become available!<br><br>
+
+Complimentary lost ticket replacement through our onsite box office, only<br><br>
+
+Special discount buying opportunities to members only</p>    
+</div>
+      
+
+
+
+
+
+<div class="contain">
+    <p class="good">To become a Member of the Modell Lyric please fill out the secure form below.</p>   
+    <p class="Becomeamember">BECOME A MEMBER</p>
+ 
+  <form action="/action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname" >Name</label>
+      </div>
+      <div class="col-85">
+        <input type="text" id="fname" name="firstname" placeholder="first name">
+      </div>
+        <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="last name">
+      </div>
+    </div>
+      
+      
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Address</label>
+      </div>
+      <div class="col-85">
+        <input type="text" id="lname" name="lastname" placeholder="Street Address">
+      </div>
+        <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="City">
+      </div><div class="col-105">
+        <input type="text" id="lname" name="lastname" placeholder="State">
+      </div><div class="col-115">
+        <input type="text" id="lname" name="lastname" placeholder="Zip Code">
+      </div>
+        
+        
+        
+        <div class="row">
+      <div class="col-25">
+        <label for="lname">Email</label>
+      </div>
+      <div class="col-85">
+        <input type="text" id="lname" name="lastname" placeholder="Email Address">
+      </div>
+            
+              <div class="row">
+      <div class="col-25">
+        <label for="lname">Phone</label>
+      </div>
+      <div class="col-85">
+        <input type="text" id="lname" name="lastname" placeholder="(+1)">
+      </div>
+    
+           
+        
+        
+        
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Membership</label>
+      </div>
+      <div class="col-55">
+        <select id="country" name="country">
+          <option value="australia">ME FIRST! / $65 – 149</option>
+          <option value="canada">FAN / $150 – 249</option>
+          <option value="usa">UNDERSTUDY / $250 – 499</option>
+          <option value="usa">PERFORMER / $500 – 999</option>
+            <option value="usa">ALL-STAR / $1000 – 2499</option>
+            <option value="usa">PRODUCER / $2500 – 4999</option>
+            <option value="usa">PRESTIGE CIRCLE / $5000 – 9999</option>
+            <option value="usa">ELITE CIRCLE / $10000 - UP</option>
+        </select>
+      </div>
+    
+        
+        
+<div class="row">
+      <div class="col-25">
+        <label for="lname">CREDIT CARD</label>
+      </div>
+      <div class="col-125">
+        <input type="text" id="lname" name="lastname" placeholder="Card Number">
+      </div>        
+         <div class="col-135">
+        <input type="text" id="lname" name="lastname" placeholder="Month">
+      </div> 
+    <div class="col-1351">
+        <input type="text" id="lname" name="lastname" placeholder="Year">
+      </div>
+     <div class="col-145">
+        <input type="text" id="lname" name="lastname" placeholder="Security Code">
+      </div> 
+     <div class="col-155">
+        <input type="text" id="lname" name="lastname" placeholder="Cardholder Name">
+      </div> 
+    
+
+    
+      </div>
+    </div>
+    <div class="row1">
+      <input type="submit" value="Submit">
+    </div>
+</div>
+
+
+    
+ <div class="footer">
+  <p class="foot">Copyright © 2018 The Modell Lyric | All Rights Reserved | Privacy Policy | The Modell Lyric Foundation is funded in part by MSAC and The Citizens of Baltimore County</p>
+</div>  
+
+    
+    
+
+    
+    <script>
+      
+// The class you click to trigger the popup 
+$('.letpop').on('click', function() {
+  // The Overlay fades in
+  $(".lay").fadeIn(200, function() {});
+  // The Popup fades in just after
+  $(".pop").fadeIn(600, function() {});
+});
+
+// The class's you click when you want to close the pop
+$('.lay, .close').on('click', function() {
+  // The Overlay fades out slower
+  $(".lay").fadeOut(600, function() {});
+  // The Popup fades out faster
+  $(".pop").fadeOut(200, function() {});
+});       
+        
+ 
+</script>        
+        
+        
+        
+        
+        
+
+</body>
+
+</html>
